@@ -1,6 +1,6 @@
 <?php
 
-class CardController extends Controller
+class CodeController extends Controller
 {
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
@@ -36,7 +36,7 @@ class CardController extends Controller
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete','activate'),
+				'actions'=>array('admin','delete'),
 				'users'=>array('admin'),
 			),
 			array('deny',  // deny all users
@@ -62,14 +62,14 @@ class CardController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new Card;
+		$model=new Code;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Card']))
+		if(isset($_POST['Code']))
 		{
-			$model->attributes=$_POST['Card'];
+			$model->attributes=$_POST['Code'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
@@ -91,9 +91,9 @@ class CardController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Card']))
+		if(isset($_POST['Code']))
 		{
-			$model->attributes=$_POST['Card'];
+			$model->attributes=$_POST['Code'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
@@ -117,29 +117,12 @@ class CardController extends Controller
 			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
 	}
 
-	public function actionActivate($id)
-	{
-		$model=$this->loadModel($id);
-		// if(isset($_POST['Card']))
-		// {
-			$model->modelActivate();
-			if($model->save())
-			{
-				$this->redirect(array('view','id'=>$model->id));
-			}
-		// }
-		
-		$this->render('view',array(
-			'model'=>$model,
-			));
-	}
-
 	/**
 	 * Lists all models.
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Card');
+		$dataProvider=new CActiveDataProvider('Code');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
@@ -150,10 +133,10 @@ class CardController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new Card('search');
+		$model=new Code('search');
 		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['Card']))
-			$model->attributes=$_GET['Card'];
+		if(isset($_GET['Code']))
+			$model->attributes=$_GET['Code'];
 
 		$this->render('admin',array(
 			'model'=>$model,
@@ -164,12 +147,12 @@ class CardController extends Controller
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.
 	 * @param integer $id the ID of the model to be loaded
-	 * @return Card the loaded model
+	 * @return Code the loaded model
 	 * @throws CHttpException
 	 */
 	public function loadModel($id)
 	{
-		$model=Card::model()->findByPk($id);
+		$model=Code::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
@@ -177,11 +160,11 @@ class CardController extends Controller
 
 	/**
 	 * Performs the AJAX validation.
-	 * @param Card $model the model to be validated
+	 * @param Code $model the model to be validated
 	 */
 	protected function performAjaxValidation($model)
 	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='card-form')
+		if(isset($_POST['ajax']) && $_POST['ajax']==='code-form')
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();

@@ -33,7 +33,20 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'create_date'); ?>
-		<?php echo $form->textField($model,'create_date'); ?>
+		<?php $this->widget('zii.widgets.jui.CJuiDatePicker', array(
+			'name'=>'create_date',
+			'model'=>$model,
+			'attribute'=>'create_date',
+			// 'mode'=>'datetime',
+			'options'=>array(
+				'showAnim'=>'fold',
+				'dateFormat'=>'yy-mm-dd'
+			),
+			'htmlOptions'=>array(
+				'style'=>'height:20px;'
+				),
+			// 'language'=>'ru'
+		));?>
 		<?php echo $form->error($model,'create_date'); ?>
 	</div>
 
@@ -43,21 +56,21 @@
 		<?php echo $form->error($model,'expiration_date'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'used_date'); ?>
-		<?php echo $form->textField($model,'used_date'); ?>
-		<?php echo $form->error($model,'used_date'); ?>
-	</div>
+	<!-- <div class="row">
+		<?php// echo $form->labelEx($model,'used_date'); ?>
+		<?php// echo $form->textField($model,'used_date'); ?>
+		<?php// echo $form->error($model,'used_date'); ?>
+	</div> -->
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'total'); ?>
-		<?php echo $form->textField($model,'total'); ?>
-		<?php echo $form->error($model,'total'); ?>
-	</div>
+	<!-- <div class="row"> -->
+		<?php// echo $form->labelEx($model,'total'); ?>
+		<?php// echo $form->textField($model,'total'); ?>
+		<?php// echo $form->error($model,'total'); ?>
+	<!-- </div> -->
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'status'); ?>
-		<?php echo $form->textField($model,'status'); ?>
+		<?php echo $form->dropDownList($model,'status', Code::items('CardStatus')); ?>
 		<?php echo $form->error($model,'status'); ?>
 	</div>
 

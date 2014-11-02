@@ -33,7 +33,7 @@ class Order extends CActiveRecord
 			array('order_number', 'length', 'max'=>128),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, order_number, card_id, total', 'safe', 'on'=>'search'),
+			array('order_number, card_id', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -45,6 +45,8 @@ class Order extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+			'card' => array(self::BELONGS_TO, 'Card', 'card_id'),
+			'lines' => array(self::HAS_MANY, 'OrderLine', 'order_id')
 		);
 	}
 

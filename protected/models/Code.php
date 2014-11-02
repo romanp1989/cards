@@ -1,26 +1,25 @@
 <?php
 
 /**
- * This is the model class for table "tbl_card".
+ * This is the model class for table "tbl_code".
  *
- * The followings are the available columns in table 'tbl_card':
+ * The followings are the available columns in table 'tbl_code':
  * @property integer $id
- * @property string $series
- * @property string $number
- * @property string $create_date
- * @property string $expiration_date
- * @property string $used_date
- * @property integer $total
- * @property integer $status
+ * @property string $type
+ * @property string $name
+ * @property integer $code
  */
-class Card extends CActiveRecord
+class Code extends CActiveRecord
 {
+
+	private static $_items=array();
+
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'tbl_card';
+		return 'tbl_code';
 	}
 
 	/**
@@ -31,13 +30,12 @@ class Card extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('series, number, create_date, expiration_date', 'required'),
-			array('total, status', 'numerical', 'integerOnly'=>true),
-			array('series, number', 'length', 'max'=>128),
-			array('create_date, expiration_date', 'date', 'format'=>'yyyy-MM-dd hh:mm:ss'),
+			array('type, name, code', 'required'),
+			array('code', 'numerical', 'integerOnly'=>true),
+			array('type, name', 'length', 'max'=>128),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('series, number, create_date, expiration_date, status', 'safe', 'on'=>'search'),
+			array('id, type, name, code', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -49,8 +47,6 @@ class Card extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'order' => array(self::HAS_MANY, 'Order', 'card_id'),
-			'lines' => array(self::HAS_MANY, 'OrderLine', array('id'=>'order_id'), 'through'=>'order')
 		);
 	}
 
@@ -61,13 +57,9 @@ class Card extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'series' => 'Series',
-			'number' => 'Number',
-			'create_date' => 'Create Date',
-			'expiration_date' => 'Expiration Date',
-			'used_date' => 'Used Date',
-			'total' => 'Total',
-			'status' => 'Status',
+			'type' => 'Type',
+			'name' => 'Name',
+			'code' => 'Code',
 		);
 	}
 
@@ -89,14 +81,10 @@ class Card extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		// $criteria->compare('id',$this->id);
-		$criteria->compare('series',$this->series,true);
-		$criteria->compare('number',$this->number,true);
-		$criteria->compare('create_date',$this->create_date,true);
-		$criteria->compare('expiration_date',$this->expiration_date,true);
-		// $criteria->compare('used_date',$this->used_date,true);
-		// $criteria->compare('total',$this->total);
-		$criteria->compare('status',$this->status);
+		$criteria->compare('id',$this->id);
+		$criteria->compare('type',$this->type,true);
+		$criteria->compare('name',$this->name,true);
+		$criteria->compare('code',$this->code);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -107,36 +95,39 @@ class Card extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return Card the static model class
+	 * @return Code the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
 	}
 
-	public function getUrl()
+	public static function items($type)
 	{
-		return Yii::app()->createUrl('card/view', array(
-			'id'=>$this->id,
-			'number'=>$this->number,
-		));
+		if(!isset(self::$_items[$type]))
+			self::loadItems($type);
+		return self::$_items[$type];
 	}
 
-	/**
-	* Change activate / deactivate card status.
-	*/
-	public function modelActivate()
+	public static function item($type, $code)
 	{
-		if($this->status == 1)
+		if(!isset(self::$_items[$type]))
 		{
-		// $attributes = array();
-		// $attributes['status'] = 0;
-			$this->status = 0;
-		// return $attributes;
+			self::loadItems($type);
 		}
-		else
+		return isset(self::$_items[$type][$code]) ? self::$_items[$type][$code] : false;
+	}
+
+	private static function loadItems($type)
+	{
+		self::$_items[$type] = array();
+		$models = self::model()->findAll(array(
+			'condition'=>'type=:type',
+			'params'=>array(':type'=>$type),
+			));
+		foreach($models as $model)
 		{
-			$this->status = 1;
+			self::$_items[$type][$model->code]=$model->name;
 		}
 	}
 }

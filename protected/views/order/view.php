@@ -27,3 +27,24 @@ $this->menu=array(
 		'total',
 	),
 )); ?>
+
+<?php
+
+$dataProvider = new CActiveDataProvider('OrderLine', array('data'=>$model->lines));
+
+$this->widget('zii.widgets.grid.CGridView', array(
+	'id'=>'orderLine-grid',
+	'dataProvider'=>$dataProvider,
+	'columns'=>array(
+		// 'id',
+		'name',
+		'price',
+		array(
+			'class'=>'CButtonColumn',
+			'viewButtonUrl'=>'Yii:app()->createUrl("/orderLine/view", array("id"=>$data["id"]))',
+			'updateButtonUrl'=>'Yii::app()-createUrl("/orderLine/update", array("id"=>$data["id"]))',
+			'deleteButtonUrl'=>'Yii::app()->createUrl("/orderLine/delete", array("id"=>$data["id"]))'
+			)
+		)
+	));
+?>

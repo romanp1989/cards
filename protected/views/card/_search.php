@@ -11,10 +11,10 @@
 	'method'=>'get',
 )); ?>
 
-	<div class="row">
-		<?php echo $form->label($model,'id'); ?>
-		<?php echo $form->textField($model,'id'); ?>
-	</div>
+	<!-- <div class="row"> -->
+		<?php// echo $form->label($model,'id'); ?>
+		<?php// echo $form->textField($model,'id'); ?>
+	<!-- </div> -->
 
 	<div class="row">
 		<?php echo $form->label($model,'series'); ?>
@@ -36,15 +36,15 @@
 		<?php echo $form->textField($model,'expiration_date'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->label($model,'used_date'); ?>
-		<?php echo $form->textField($model,'used_date'); ?>
-	</div>
+	<!-- <div class="row"> -->
+		<?php// echo $form->label($model,'used_date'); ?>
+		<?php// echo $form->textField($model,'used_date'); ?>
+	<!-- </div> -->
 
-	<div class="row">
-		<?php echo $form->label($model,'total'); ?>
-		<?php echo $form->textField($model,'total'); ?>
-	</div>
+	<!-- <div class="row"> -->
+		<?php// echo $form->label($model,'total'); ?>
+		<?php// echo $form->textField($model,'total'); ?>
+	<!-- </div> -->
 
 	<div class="row">
 		<?php echo $form->label($model,'status'); ?>

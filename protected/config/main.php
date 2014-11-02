@@ -18,6 +18,8 @@ return array(
 		'application.components.*',
 	),
 
+	'defaultController' => 'card',
+
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool
 		
