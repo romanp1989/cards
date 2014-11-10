@@ -47,7 +47,17 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 	'columns'=>array(
 		'id',
 		'order_number',
-		'card_id',
+		array(
+			'name'=>'order_number',
+			'type'=>'raw',
+			'value'=>'CHtml::link(CHtml::encode($data->order_number), $data->url)'
+			),
+		// 'card_id',
+		array(
+			'name'=>'card_id',
+			'value'=>function($data){ return $data->card->fullNumber;},
+			'filter'=>CHtml::listData(Card::model()->findAll(), "id", "number"),
+			),
 		'total',
 		array(
 			'class'=>'CButtonColumn',

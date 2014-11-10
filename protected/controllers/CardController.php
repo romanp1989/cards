@@ -36,7 +36,7 @@ class CardController extends Controller
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete','activate'),
+				'actions'=>array('admin','delete','activate','generate'),
 				'users'=>array('admin'),
 			),
 			array('deny',  // deny all users
@@ -133,6 +133,32 @@ class CardController extends Controller
 			'model'=>$model,
 			));
 	}
+
+	// public function actionGenerate()
+	// {
+	// 	// $dataProvider=new CActiveDataProvider('Card');
+	// 	$model = new Card;
+	// 	$cardsArray = array();
+	// 	if(isset($_POST) && count($_POST) > 0)
+	// 	{
+	// 		var_dump(count($_POST));
+	// 		$count = $_POST['count'];
+	// 		$series = $_POST['series'];
+	// 		$expiration_date = $_POST['expiration_date'];
+	// 		$model = Card::generateCards($count, $series, $expiration_date);
+	// 		if($model->save())
+	// 		{
+	// 		// var_dump($model);
+	// 		// $this->redirect(array('admin'));
+	// 		}
+	// 		// $test = $model->id;
+
+	// 	}
+	// 	$this->render('generate', array(
+	// 		'model'=>$model,
+	// 		'test'=>$test
+	// 		));
+	// }
 
 	/**
 	 * Lists all models.

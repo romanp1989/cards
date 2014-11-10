@@ -100,4 +100,15 @@ class OrderLine extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+
+	// protected function beforeSave()
+	// {
+	// 	parent::beforeSave();
+	// }
+
+	protected function afterSave()
+	{
+		parent::afterSave();
+		$this->order->getSum();
+	}
 }

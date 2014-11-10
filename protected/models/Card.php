@@ -15,6 +15,7 @@
  */
 class Card extends CActiveRecord
 {
+	public $statusBtnLbl = 'Test';
 	/**
 	 * @return string the associated database table name
 	 */
@@ -34,7 +35,7 @@ class Card extends CActiveRecord
 			array('series, number, create_date, expiration_date', 'required'),
 			array('total, status', 'numerical', 'integerOnly'=>true),
 			array('series, number', 'length', 'max'=>128),
-			array('create_date, expiration_date', 'date', 'format'=>'yyyy-MM-dd hh:mm:ss'),
+			// array('create_date, expiration_date', 'date', 'format'=>'yyyy-MM-dd hh:mm'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('series, number, create_date, expiration_date, status', 'safe', 'on'=>'search'),
@@ -50,7 +51,8 @@ class Card extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'order' => array(self::HAS_MANY, 'Order', 'card_id'),
-			'lines' => array(self::HAS_MANY, 'OrderLine', array('id'=>'order_id'), 'through'=>'order')
+			'lines' => array(self::HAS_MANY, 'OrderLine', array('id'=>'order_id'), 'through'=>'order'),
+			'cardSum' => array(self::STAT, 'Order', 'card_id', 'select'=>'SUM(total)')
 		);
 	}
 
@@ -118,7 +120,7 @@ class Card extends CActiveRecord
 	{
 		return Yii::app()->createUrl('card/view', array(
 			'id'=>$this->id,
-			'number'=>$this->number,
+			// 'number'=>$this->number,
 		));
 	}
 
@@ -132,11 +134,56 @@ class Card extends CActiveRecord
 		// $attributes = array();
 		// $attributes['status'] = 0;
 			$this->status = 0;
+			$this->statusBtnLbl = 'Activate Card';
 		// return $attributes;
 		}
 		else
 		{
 			$this->status = 1;
+			$this->statusBtnLbl = 'Deactivate Card';
 		}
+	}
+
+	protected function afterSave()
+	{
+		parent::afterSave();
+		if($this->status == 1)
+		{
+			$this->statusBtnLbl = 'Deactivate Card';
+		}
+		else
+		{
+			$this->statusBtnLbl = 'Activate Card';
+		}
+	}
+
+	// public function getStatusBtnLbl()
+	// {
+	// 	return $this->statusBtnLbl;
+	// }
+	
+	public function getSum()
+	{
+		$this->total = $this->cardSum();
+		$this->save();
+	}
+
+	public function getFullNumber()
+	{
+		return $this->series.' '.$this->number;
+	}
+
+	public static function generateCards($count, $series, $expiration_date)
+	{
+		$card = new Card;
+		$card->series = '111';
+		$card->number = '222';
+		$card->create_date = new CDbExpression('NOW()');
+		$card->expiration_date = new CDbExpression('NOW()');
+		// var_dump($card);
+		// $card->create_date = '2014-11-03 01:05';
+		// $card->expiration_date = '2014-11-04 01:16';
+		// $card->save();
+		return $card;
 	}
 }

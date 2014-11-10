@@ -12,9 +12,13 @@ $this->menu=array(
 	array('label'=>'Create Card', 'url'=>array('create')),
 	array('label'=>'Update Card', 'url'=>array('update', 'id'=>$model->id)),
 	array('label'=>'Delete Card', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Activate Card', 'url'=>array('activate', 'id'=>$model->id)),
+	array('label'=>'Activate/Deactivate Card', 'url'=>array('activate', 'id'=>$model->id)),
 	array('label'=>'Manage Card', 'url'=>array('admin')),
+	array('label'=>'Add order', 'url'=>array('order/create', 'card_id'=>$model->id)),
 );
+// Yii::app()->clientScript->registerScript('activateCard', "
+// 	$('')
+// 	");
 ?>
 
 <h1>View Card #<?php echo $model->id; ?></h1>

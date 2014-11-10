@@ -13,6 +13,7 @@ $this->menu=array(
 	array('label'=>'Update Order', 'url'=>array('update', 'id'=>$model->id)),
 	array('label'=>'Delete Order', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
 	array('label'=>'Manage Order', 'url'=>array('admin')),
+	array('label'=>'Add Order Line', 'url'=>array('orderLine/create', 'order_id'=>$model->id)),
 );
 ?>
 
@@ -23,7 +24,11 @@ $this->menu=array(
 	'attributes'=>array(
 		'id',
 		'order_number',
-		'card_id',
+		// 'card_id',
+		array(
+			'name'=>'card_id',
+			'value'=>$model->card->fullNumber,
+			),
 		'total',
 	),
 )); ?>
@@ -41,8 +46,8 @@ $this->widget('zii.widgets.grid.CGridView', array(
 		'price',
 		array(
 			'class'=>'CButtonColumn',
-			'viewButtonUrl'=>'Yii:app()->createUrl("/orderLine/view", array("id"=>$data["id"]))',
-			'updateButtonUrl'=>'Yii::app()-createUrl("/orderLine/update", array("id"=>$data["id"]))',
+			'viewButtonUrl'=>'Yii::app()->createUrl("/orderLine/view", array("id"=>$data["id"]))',
+			'updateButtonUrl'=>'Yii::app()->createUrl("/orderLine/update", array("id"=>$data["id"]))',
 			'deleteButtonUrl'=>'Yii::app()->createUrl("/orderLine/delete", array("id"=>$data["id"]))'
 			)
 		)

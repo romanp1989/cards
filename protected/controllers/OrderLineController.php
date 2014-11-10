@@ -60,18 +60,19 @@ class OrderLineController extends Controller
 	 * Creates a new model.
 	 * If creation is successful, the browser will be redirected to the 'view' page.
 	 */
-	public function actionCreate()
+	public function actionCreate($order_id=None)
 	{
 		$model=new OrderLine;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
-
+		// var_dump($order_id);
 		if(isset($_POST['OrderLine']))
 		{
 			$model->attributes=$_POST['OrderLine'];
+			$model->order_id = $order_id;
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+				$this->redirect(array('order/view','id'=>$model->order->id));
 		}
 
 		$this->render('create',array(

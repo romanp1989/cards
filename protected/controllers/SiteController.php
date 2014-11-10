@@ -106,4 +106,27 @@ class SiteController extends Controller
 		Yii::app()->user->logout();
 		$this->redirect(Yii::app()->homeUrl);
 	}
+
+	public function actionGenerate()
+	{
+		$this->layout = '//layouts/column2';
+		$model = new GenerateForm;
+
+		if(isset($_POST['GenerateForm']))
+		{
+			$model->attributes = $_POST['GenerateForm'];
+			// var_dump(date_create($model->expiration_date));
+			// var_dump(date_create('now') < date_create($model->expiration_date));
+			$model->generateCards();
+			// $this->redirect(array('card/admin'));
+		}
+		$this->render('generate', array('model'=>$model));
+	}
+
+	public function actionGenerateSave()
+	{
+		$this->layout = '//layouts/column2';
+		$model = new Card('search');
+		$this->render('admin', $model->$model);
+	}
 }

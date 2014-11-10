@@ -27,7 +27,7 @@ class Order extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('order_number, card_id, total', 'required'),
+			array('order_number, card_id', 'required'),
 			array('card_id', 'numerical', 'integerOnly'=>true),
 			array('total', 'numerical'),
 			array('order_number', 'length', 'max'=>128),
@@ -46,7 +46,8 @@ class Order extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'card' => array(self::BELONGS_TO, 'Card', 'card_id'),
-			'lines' => array(self::HAS_MANY, 'OrderLine', 'order_id')
+			'lines' => array(self::HAS_MANY, 'OrderLine', 'order_id'),
+			'orderSum' => array(self::STAT, 'OrderLine', 'order_id', 'select'=>'SUM(price)')
 		);
 	}
 
@@ -100,5 +101,37 @@ class Order extends CActiveRecord
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
+	}
+
+	public function getUrl()
+	{
+		return Yii::app()->createUrl('order/view',array(
+			'id'=>$this->id,
+			));
+	}
+
+	protected function beforeSave()
+	{
+		parent::beforeSave();
+		if(date_create($this->card->expiration_date) < date_create('now'))
+		{
+			return false;
+		}
+		return true;
+	}
+
+	protected function afterSave()
+	{
+		parent::afterSave();
+		$this->card->getSum();
+		$this->card->used_date = new CDbExpression('NOW()');
+		$this->card->save();
+	}
+
+	public function getSum()
+	{
+		$this->total = $this->orderSum;
+		$this->save();
+
 	}
 }

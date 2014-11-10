@@ -418,3 +418,1731 @@ REQUEST_URI=/cards/index.php?r=card/update&id=1
 in Z:\home\localhost\www\cards\protected\views\card\_form.php (73)
 in Z:\home\localhost\www\cards\protected\views\card\update.php (21)
 in Z:\home\localhost\www\cards\protected\controllers\CardController.php (103)
+2014/11/03 15:40:43 [error] [exception.CException] exception 'CException' with message 'Property "Card." is not defined.' in Z:\home\localhost\www\yii-1.1.15\framework\base\CComponent.php:130
+Stack trace:
+#0 Z:\home\localhost\www\yii-1.1.15\framework\db\ar\CActiveRecord.php(145): CComponent->__get('')
+#1 Z:\home\localhost\www\cards\protected\views\card\view.php(15): CActiveRecord->__get('')
+#2 Z:\home\localhost\www\yii-1.1.15\framework\web\CBaseController.php(126): require('Z:\home\localho...')
+#3 Z:\home\localhost\www\yii-1.1.15\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\localho...', Array, true)
+#4 Z:\home\localhost\www\yii-1.1.15\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\localho...', Array, true)
+#5 Z:\home\localhost\www\yii-1.1.15\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#6 Z:\home\localhost\www\cards\protected\controllers\CardController.php(56): CController->render('view', Array)
+#7 [internal function]: CardController->actionView('1')
+#8 Z:\home\localhost\www\yii-1.1.15\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(CardController), Array)
+#9 Z:\home\localhost\www\yii-1.1.15\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CardController), Object(ReflectionMethod), Array)
+#10 Z:\home\localhost\www\yii-1.1.15\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 Z:\home\localhost\www\yii-1.1.15\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 Z:\home\localhost\www\yii-1.1.15\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 Z:\home\localhost\www\yii-1.1.15\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 Z:\home\localhost\www\yii-1.1.15\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 Z:\home\localhost\www\yii-1.1.15\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 Z:\home\localhost\www\yii-1.1.15\framework\web\CController.php(291): CFilterChain->run()
+#17 Z:\home\localhost\www\yii-1.1.15\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 Z:\home\localhost\www\yii-1.1.15\framework\web\CWebApplication.php(282): CController->run('view')
+#19 Z:\home\localhost\www\yii-1.1.15\framework\web\CWebApplication.php(141): CWebApplication->runController('card/view')
+#20 Z:\home\localhost\www\yii-1.1.15\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/cards/index.php?r=card/view&id=1
+HTTP_REFERER=http://localhost/cards/index.php?r=card/view&id=1
+---
+2014/11/03 15:41:40 [error] [exception.CException] exception 'CException' with message 'Property "Card." is not defined.' in Z:\home\localhost\www\yii-1.1.15\framework\base\CComponent.php:130
+Stack trace:
+#0 Z:\home\localhost\www\yii-1.1.15\framework\db\ar\CActiveRecord.php(145): CComponent->__get('')
+#1 Z:\home\localhost\www\cards\protected\views\card\view.php(15): CActiveRecord->__get('')
+#2 Z:\home\localhost\www\yii-1.1.15\framework\web\CBaseController.php(126): require('Z:\home\localho...')
+#3 Z:\home\localhost\www\yii-1.1.15\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\localho...', Array, true)
+#4 Z:\home\localhost\www\yii-1.1.15\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\localho...', Array, true)
+#5 Z:\home\localhost\www\yii-1.1.15\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#6 Z:\home\localhost\www\cards\protected\controllers\CardController.php(56): CController->render('view', Array)
+#7 [internal function]: CardController->actionView('1')
+#8 Z:\home\localhost\www\yii-1.1.15\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(CardController), Array)
+#9 Z:\home\localhost\www\yii-1.1.15\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CardController), Object(ReflectionMethod), Array)
+#10 Z:\home\localhost\www\yii-1.1.15\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 Z:\home\localhost\www\yii-1.1.15\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 Z:\home\localhost\www\yii-1.1.15\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 Z:\home\localhost\www\yii-1.1.15\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 Z:\home\localhost\www\yii-1.1.15\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 Z:\home\localhost\www\yii-1.1.15\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 Z:\home\localhost\www\yii-1.1.15\framework\web\CController.php(291): CFilterChain->run()
+#17 Z:\home\localhost\www\yii-1.1.15\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 Z:\home\localhost\www\yii-1.1.15\framework\web\CWebApplication.php(282): CController->run('view')
+#19 Z:\home\localhost\www\yii-1.1.15\framework\web\CWebApplication.php(141): CWebApplication->runController('card/view')
+#20 Z:\home\localhost\www\yii-1.1.15\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/cards/index.php?r=card/view&id=1
+HTTP_REFERER=http://localhost/cards/index.php?r=card/view&id=1
+---
+2014/11/03 15:42:43 [error] [exception.CException] exception 'CException' with message 'Property "Card." is not defined.' in Z:\home\localhost\www\yii-1.1.15\framework\base\CComponent.php:130
+Stack trace:
+#0 Z:\home\localhost\www\yii-1.1.15\framework\db\ar\CActiveRecord.php(145): CComponent->__get('')
+#1 Z:\home\localhost\www\cards\protected\views\card\view.php(15): CActiveRecord->__get('')
+#2 Z:\home\localhost\www\yii-1.1.15\framework\web\CBaseController.php(126): require('Z:\home\localho...')
+#3 Z:\home\localhost\www\yii-1.1.15\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\localho...', Array, true)
+#4 Z:\home\localhost\www\yii-1.1.15\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\localho...', Array, true)
+#5 Z:\home\localhost\www\yii-1.1.15\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#6 Z:\home\localhost\www\cards\protected\controllers\CardController.php(56): CController->render('view', Array)
+#7 [internal function]: CardController->actionView('1')
+#8 Z:\home\localhost\www\yii-1.1.15\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(CardController), Array)
+#9 Z:\home\localhost\www\yii-1.1.15\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CardController), Object(ReflectionMethod), Array)
+#10 Z:\home\localhost\www\yii-1.1.15\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 Z:\home\localhost\www\yii-1.1.15\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 Z:\home\localhost\www\yii-1.1.15\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 Z:\home\localhost\www\yii-1.1.15\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 Z:\home\localhost\www\yii-1.1.15\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 Z:\home\localhost\www\yii-1.1.15\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 Z:\home\localhost\www\yii-1.1.15\framework\web\CController.php(291): CFilterChain->run()
+#17 Z:\home\localhost\www\yii-1.1.15\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 Z:\home\localhost\www\yii-1.1.15\framework\web\CWebApplication.php(282): CController->run('view')
+#19 Z:\home\localhost\www\yii-1.1.15\framework\web\CWebApplication.php(141): CWebApplication->runController('card/view')
+#20 Z:\home\localhost\www\yii-1.1.15\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/cards/index.php?r=card/view&id=1
+HTTP_REFERER=http://localhost/cards/index.php?r=card/view&id=1
+---
+2014/11/03 15:42:44 [error] [exception.CException] exception 'CException' with message 'Property "Card." is not defined.' in Z:\home\localhost\www\yii-1.1.15\framework\base\CComponent.php:130
+Stack trace:
+#0 Z:\home\localhost\www\yii-1.1.15\framework\db\ar\CActiveRecord.php(145): CComponent->__get('')
+#1 Z:\home\localhost\www\cards\protected\views\card\view.php(15): CActiveRecord->__get('')
+#2 Z:\home\localhost\www\yii-1.1.15\framework\web\CBaseController.php(126): require('Z:\home\localho...')
+#3 Z:\home\localhost\www\yii-1.1.15\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\localho...', Array, true)
+#4 Z:\home\localhost\www\yii-1.1.15\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\localho...', Array, true)
+#5 Z:\home\localhost\www\yii-1.1.15\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#6 Z:\home\localhost\www\cards\protected\controllers\CardController.php(56): CController->render('view', Array)
+#7 [internal function]: CardController->actionView('1')
+#8 Z:\home\localhost\www\yii-1.1.15\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(CardController), Array)
+#9 Z:\home\localhost\www\yii-1.1.15\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CardController), Object(ReflectionMethod), Array)
+#10 Z:\home\localhost\www\yii-1.1.15\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 Z:\home\localhost\www\yii-1.1.15\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 Z:\home\localhost\www\yii-1.1.15\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 Z:\home\localhost\www\yii-1.1.15\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 Z:\home\localhost\www\yii-1.1.15\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 Z:\home\localhost\www\yii-1.1.15\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 Z:\home\localhost\www\yii-1.1.15\framework\web\CController.php(291): CFilterChain->run()
+#17 Z:\home\localhost\www\yii-1.1.15\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 Z:\home\localhost\www\yii-1.1.15\framework\web\CWebApplication.php(282): CController->run('view')
+#19 Z:\home\localhost\www\yii-1.1.15\framework\web\CWebApplication.php(141): CWebApplication->runController('card/view')
+#20 Z:\home\localhost\www\yii-1.1.15\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/cards/index.php?r=card/view&id=1
+HTTP_REFERER=http://localhost/cards/index.php?r=card/view&id=1
+---
+2014/11/03 15:52:37 [error] [exception.CException] exception 'CException' with message 'Property "Card." is not defined.' in Z:\home\localhost\www\yii-1.1.15\framework\base\CComponent.php:173
+Stack trace:
+#0 Z:\home\localhost\www\yii-1.1.15\framework\db\ar\CActiveRecord.php(161): CComponent->__set('', 'Activate Card')
+#1 Z:\home\localhost\www\cards\protected\models\Card.php(136): CActiveRecord->__set('', 'Activate Card')
+#2 Z:\home\localhost\www\cards\protected\controllers\CardController.php(125): Card->modelActivate()
+#3 [internal function]: CardController->actionActivate('1')
+#4 Z:\home\localhost\www\yii-1.1.15\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(CardController), Array)
+#5 Z:\home\localhost\www\yii-1.1.15\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CardController), Object(ReflectionMethod), Array)
+#6 Z:\home\localhost\www\yii-1.1.15\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 Z:\home\localhost\www\yii-1.1.15\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 Z:\home\localhost\www\yii-1.1.15\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 Z:\home\localhost\www\yii-1.1.15\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 Z:\home\localhost\www\yii-1.1.15\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 Z:\home\localhost\www\yii-1.1.15\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 Z:\home\localhost\www\yii-1.1.15\framework\web\CController.php(291): CFilterChain->run()
+#13 Z:\home\localhost\www\yii-1.1.15\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 Z:\home\localhost\www\yii-1.1.15\framework\web\CWebApplication.php(282): CController->run('activate')
+#15 Z:\home\localhost\www\yii-1.1.15\framework\web\CWebApplication.php(141): CWebApplication->runController('card/activate')
+#16 Z:\home\localhost\www\yii-1.1.15\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/cards/index.php?r=card/activate&id=1
+HTTP_REFERER=http://localhost/cards/index.php?r=card/view&id=1
+---
+2014/11/03 15:58:42 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (Z:\home\localhost\www\yii-1.1.15\framework\web\helpers\CHtml.php:103)
+Stack trace:
+#0 Z:\home\localhost\www\yii-1.1.15\framework\zii\widgets\CMenu.php(159): CMenu->normalizeItems()
+#1 Z:\home\localhost\www\yii-1.1.15\framework\web\CBaseController.php(147): CMenu->init()
+#2 Z:\home\localhost\www\yii-1.1.15\framework\web\CBaseController.php(172): CardController->createWidget()
+#3 Z:\home\localhost\www\cards\protected\views\layouts\column2.php(17): CardController->widget()
+#4 Z:\home\localhost\www\yii-1.1.15\framework\web\CBaseController.php(126): require()
+#5 Z:\home\localhost\www\yii-1.1.15\framework\web\CBaseController.php(95): CardController->renderInternal()
+#6 Z:\home\localhost\www\yii-1.1.15\framework\web\CController.php(784): CardController->renderFile()
+#7 Z:\home\localhost\www\cards\protected\controllers\CardController.php(56): CardController->render()
+#8 unknown(0): CardController->actionView()
+#9 Z:\home\localhost\www\yii-1.1.15\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#10 Z:\home\localhost\www\yii-1.1.15\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#11 Z:\home\localhost\www\yii-1.1.15\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 Z:\home\localhost\www\yii-1.1.15\framework\web\filters\CFilterChain.php(133): CardController->runAction()
+#13 Z:\home\localhost\www\yii-1.1.15\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#14 Z:\home\localhost\www\yii-1.1.15\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#15 Z:\home\localhost\www\yii-1.1.15\framework\web\filters\CInlineFilter.php(58): CardController->filterAccessControl()
+#16 Z:\home\localhost\www\yii-1.1.15\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#17 Z:\home\localhost\www\yii-1.1.15\framework\web\CController.php(291): CFilterChain->run()
+#18 Z:\home\localhost\www\yii-1.1.15\framework\web\CController.php(265): CardController->runActionWithFilters()
+#19 Z:\home\localhost\www\yii-1.1.15\framework\web\CWebApplication.php(282): CardController->run()
+#20 Z:\home\localhost\www\yii-1.1.15\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 Z:\home\localhost\www\yii-1.1.15\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#22 Z:\home\localhost\www\cards\index.php(13): CWebApplication->run()
+REQUEST_URI=/cards/index.php?r=card/view&id=1
+in Z:\home\localhost\www\cards\protected\views\layouts\column2.php (17)
+in Z:\home\localhost\www\cards\protected\controllers\CardController.php (56)
+in Z:\home\localhost\www\cards\index.php (13)
+2014/11/03 22:18:56 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'. The SQL statement executed was: SELECT `t`.`order_id` AS `c`, Array AS `s` FROM `tbl_order_line` `t` WHERE (`t`.`order_id`=1) GROUP BY `t`.`order_id`.
+in Z:\home\localhost\www\cards\protected\models\Order.php (108)
+in Z:\home\localhost\www\cards\protected\models\OrderLine.php (107)
+in Z:\home\localhost\www\cards\protected\controllers\OrderLineController.php (73)
+2014/11/03 22:18:56 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'. The SQL statement executed was: SELECT `t`.`order_id` AS `c`, Array AS `s` FROM `tbl_order_line` `t` WHERE (`t`.`order_id`=1) GROUP BY `t`.`order_id`' in Z:\home\localhost\www\yii-1.1.15\framework\db\CDbCommand.php:543
+Stack trace:
+#0 Z:\home\localhost\www\yii-1.1.15\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 Z:\home\localhost\www\yii-1.1.15\framework\db\ar\CActiveFinder.php(1463): CDbCommand->queryAll()
+#2 Z:\home\localhost\www\yii-1.1.15\framework\db\ar\CActiveFinder.php(1394): CStatElement->queryOneMany()
+#3 Z:\home\localhost\www\yii-1.1.15\framework\db\ar\CActiveFinder.php(472): CStatElement->query()
+#4 Z:\home\localhost\www\yii-1.1.15\framework\db\ar\CActiveFinder.php(163): CJoinElement->lazyFind(Object(Order))
+#5 Z:\home\localhost\www\yii-1.1.15\framework\db\ar\CActiveRecord.php(281): CActiveFinder->lazyFind(Object(Order))
+#6 Z:\home\localhost\www\yii-1.1.15\framework\db\ar\CActiveRecord.php(143): CActiveRecord->getRelated('orderSum')
+#7 Z:\home\localhost\www\cards\protected\models\Order.php(108): CActiveRecord->__get('orderSum')
+#8 Z:\home\localhost\www\cards\protected\models\OrderLine.php(107): Order->getSum()
+#9 Z:\home\localhost\www\yii-1.1.15\framework\db\ar\CActiveRecord.php(1097): OrderLine->afterSave()
+#10 Z:\home\localhost\www\yii-1.1.15\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#11 Z:\home\localhost\www\cards\protected\controllers\OrderLineController.php(73): CActiveRecord->save()
+#12 Z:\home\localhost\www\yii-1.1.15\framework\web\actions\CInlineAction.php(49): OrderLineController->actionCreate()
+#13 Z:\home\localhost\www\yii-1.1.15\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 Z:\home\localhost\www\yii-1.1.15\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#15 Z:\home\localhost\www\yii-1.1.15\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 Z:\home\localhost\www\yii-1.1.15\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#17 Z:\home\localhost\www\yii-1.1.15\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#18 Z:\home\localhost\www\yii-1.1.15\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#19 Z:\home\localhost\www\yii-1.1.15\framework\web\CController.php(291): CFilterChain->run()
+#20 Z:\home\localhost\www\yii-1.1.15\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 Z:\home\localhost\www\yii-1.1.15\framework\web\CWebApplication.php(282): CController->run('create')
+#22 Z:\home\localhost\www\yii-1.1.15\framework\web\CWebApplication.php(141): CWebApplication->runController('orderLine/creat...')
+#23 Z:\home\localhost\www\yii-1.1.15\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#24 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/cards/index.php?r=orderLine/create
+HTTP_REFERER=http://localhost/cards/index.php?r=orderLine/create
+---
+2014/11/03 22:19:38 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'. The SQL statement executed was: SELECT `t`.`order_id` AS `c`, Array AS `s` FROM `tbl_order_line` `t` WHERE (`t`.`order_id`=1) GROUP BY `t`.`order_id`.
+in Z:\home\localhost\www\cards\protected\models\Order.php (108)
+in Z:\home\localhost\www\cards\protected\models\OrderLine.php (107)
+in Z:\home\localhost\www\cards\protected\controllers\OrderLineController.php (73)
+2014/11/03 22:19:38 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'. The SQL statement executed was: SELECT `t`.`order_id` AS `c`, Array AS `s` FROM `tbl_order_line` `t` WHERE (`t`.`order_id`=1) GROUP BY `t`.`order_id`' in Z:\home\localhost\www\yii-1.1.15\framework\db\CDbCommand.php:543
+Stack trace:
+#0 Z:\home\localhost\www\yii-1.1.15\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 Z:\home\localhost\www\yii-1.1.15\framework\db\ar\CActiveFinder.php(1463): CDbCommand->queryAll()
+#2 Z:\home\localhost\www\yii-1.1.15\framework\db\ar\CActiveFinder.php(1394): CStatElement->queryOneMany()
+#3 Z:\home\localhost\www\yii-1.1.15\framework\db\ar\CActiveFinder.php(472): CStatElement->query()
+#4 Z:\home\localhost\www\yii-1.1.15\framework\db\ar\CActiveFinder.php(163): CJoinElement->lazyFind(Object(Order))
+#5 Z:\home\localhost\www\yii-1.1.15\framework\db\ar\CActiveRecord.php(281): CActiveFinder->lazyFind(Object(Order))
+#6 Z:\home\localhost\www\yii-1.1.15\framework\db\ar\CActiveRecord.php(143): CActiveRecord->getRelated('orderSum')
+#7 Z:\home\localhost\www\cards\protected\models\Order.php(108): CActiveRecord->__get('orderSum')
+#8 Z:\home\localhost\www\cards\protected\models\OrderLine.php(107): Order->getSum()
+#9 Z:\home\localhost\www\yii-1.1.15\framework\db\ar\CActiveRecord.php(1097): OrderLine->afterSave()
+#10 Z:\home\localhost\www\yii-1.1.15\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#11 Z:\home\localhost\www\cards\protected\controllers\OrderLineController.php(73): CActiveRecord->save()
+#12 Z:\home\localhost\www\yii-1.1.15\framework\web\actions\CInlineAction.php(49): OrderLineController->actionCreate()
+#13 Z:\home\localhost\www\yii-1.1.15\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 Z:\home\localhost\www\yii-1.1.15\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#15 Z:\home\localhost\www\yii-1.1.15\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 Z:\home\localhost\www\yii-1.1.15\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#17 Z:\home\localhost\www\yii-1.1.15\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#18 Z:\home\localhost\www\yii-1.1.15\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#19 Z:\home\localhost\www\yii-1.1.15\framework\web\CController.php(291): CFilterChain->run()
+#20 Z:\home\localhost\www\yii-1.1.15\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 Z:\home\localhost\www\yii-1.1.15\framework\web\CWebApplication.php(282): CController->run('create')
+#22 Z:\home\localhost\www\yii-1.1.15\framework\web\CWebApplication.php(141): CWebApplication->runController('orderLine/creat...')
+#23 Z:\home\localhost\www\yii-1.1.15\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#24 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/cards/index.php?r=orderLine/create
+HTTP_REFERER=http://localhost/cards/index.php?r=orderLine/create
+---
+2014/11/03 22:20:26 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'. The SQL statement executed was: SELECT `t`.`order_id` AS `c`, Array AS `s` FROM `tbl_order_line` `t` WHERE (`t`.`order_id`=1) GROUP BY `t`.`order_id`.
+in Z:\home\localhost\www\cards\protected\models\Order.php (108)
+in Z:\home\localhost\www\cards\protected\models\OrderLine.php (107)
+in Z:\home\localhost\www\cards\protected\controllers\OrderLineController.php (73)
+2014/11/03 22:20:26 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'. The SQL statement executed was: SELECT `t`.`order_id` AS `c`, Array AS `s` FROM `tbl_order_line` `t` WHERE (`t`.`order_id`=1) GROUP BY `t`.`order_id`' in Z:\home\localhost\www\yii-1.1.15\framework\db\CDbCommand.php:543
+Stack trace:
+#0 Z:\home\localhost\www\yii-1.1.15\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 Z:\home\localhost\www\yii-1.1.15\framework\db\ar\CActiveFinder.php(1463): CDbCommand->queryAll()
+#2 Z:\home\localhost\www\yii-1.1.15\framework\db\ar\CActiveFinder.php(1394): CStatElement->queryOneMany()
+#3 Z:\home\localhost\www\yii-1.1.15\framework\db\ar\CActiveFinder.php(472): CStatElement->query()
+#4 Z:\home\localhost\www\yii-1.1.15\framework\db\ar\CActiveFinder.php(163): CJoinElement->lazyFind(Object(Order))
+#5 Z:\home\localhost\www\yii-1.1.15\framework\db\ar\CActiveRecord.php(281): CActiveFinder->lazyFind(Object(Order))
+#6 Z:\home\localhost\www\yii-1.1.15\framework\db\ar\CActiveRecord.php(143): CActiveRecord->getRelated('orderSum')
+#7 Z:\home\localhost\www\cards\protected\models\Order.php(108): CActiveRecord->__get('orderSum')
+#8 Z:\home\localhost\www\cards\protected\models\OrderLine.php(107): Order->getSum()
+#9 Z:\home\localhost\www\yii-1.1.15\framework\db\ar\CActiveRecord.php(1097): OrderLine->afterSave()
+#10 Z:\home\localhost\www\yii-1.1.15\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#11 Z:\home\localhost\www\cards\protected\controllers\OrderLineController.php(73): CActiveRecord->save()
+#12 Z:\home\localhost\www\yii-1.1.15\framework\web\actions\CInlineAction.php(49): OrderLineController->actionCreate()
+#13 Z:\home\localhost\www\yii-1.1.15\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 Z:\home\localhost\www\yii-1.1.15\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#15 Z:\home\localhost\www\yii-1.1.15\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 Z:\home\localhost\www\yii-1.1.15\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#17 Z:\home\localhost\www\yii-1.1.15\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#18 Z:\home\localhost\www\yii-1.1.15\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#19 Z:\home\localhost\www\yii-1.1.15\framework\web\CController.php(291): CFilterChain->run()
+#20 Z:\home\localhost\www\yii-1.1.15\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 Z:\home\localhost\www\yii-1.1.15\framework\web\CWebApplication.php(282): CController->run('create')
+#22 Z:\home\localhost\www\yii-1.1.15\framework\web\CWebApplication.php(141): CWebApplication->runController('orderLine/creat...')
+#23 Z:\home\localhost\www\yii-1.1.15\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#24 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/cards/index.php?r=orderLine/create
+HTTP_REFERER=http://localhost/cards/index.php?r=orderLine/create
+---
+2014/11/03 23:02:38 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in Z:\home\localhost\www\yii-1.1.15\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\localhost\www\yii-1.1.15\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 Z:\home\localhost\www\yii-1.1.15\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\localhost\www\yii-1.1.15\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\localhost\www\yii-1.1.15\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\localhost\www\yii-1.1.15\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\localhost\www\yii-1.1.15\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\localhost\www\yii-1.1.15\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\localhost\www\yii-1.1.15\framework\web\CWebApplication.php(282): CController->run('generate')
+#8 Z:\home\localhost\www\yii-1.1.15\framework\web\CWebApplication.php(141): CWebApplication->runController('card/generate')
+#9 Z:\home\localhost\www\yii-1.1.15\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/cards/index.php?r=card/generate
+HTTP_REFERER=http://localhost/cards/index.php?r=card/admin
+---
+2014/11/03 23:03:03 [error] [exception.CException] exception 'CException' with message 'The "dataProvider" property cannot be empty.' in Z:\home\localhost\www\yii-1.1.15\framework\zii\widgets\CBaseListView.php:109
+Stack trace:
+#0 Z:\home\localhost\www\yii-1.1.15\framework\zii\widgets\CListView.php(211): CBaseListView->init()
+#1 Z:\home\localhost\www\yii-1.1.15\framework\web\CBaseController.php(147): CListView->init()
+#2 Z:\home\localhost\www\yii-1.1.15\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#3 Z:\home\localhost\www\cards\protected\views\card\index.php(20): CBaseController->widget('zii.widgets.CLi...', Array)
+#4 Z:\home\localhost\www\yii-1.1.15\framework\web\CBaseController.php(126): require('Z:\home\localho...')
+#5 Z:\home\localhost\www\yii-1.1.15\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\localho...', Array, true)
+#6 Z:\home\localhost\www\yii-1.1.15\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\localho...', Array, true)
+#7 Z:\home\localhost\www\yii-1.1.15\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#8 Z:\home\localhost\www\cards\protected\controllers\CardController.php(141): CController->render('index', Array)
+#9 Z:\home\localhost\www\yii-1.1.15\framework\web\actions\CInlineAction.php(49): CardController->actionGenerate()
+#10 Z:\home\localhost\www\yii-1.1.15\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 Z:\home\localhost\www\yii-1.1.15\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 Z:\home\localhost\www\yii-1.1.15\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 Z:\home\localhost\www\yii-1.1.15\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 Z:\home\localhost\www\yii-1.1.15\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 Z:\home\localhost\www\yii-1.1.15\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 Z:\home\localhost\www\yii-1.1.15\framework\web\CController.php(291): CFilterChain->run()
+#17 Z:\home\localhost\www\yii-1.1.15\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 Z:\home\localhost\www\yii-1.1.15\framework\web\CWebApplication.php(282): CController->run('generate')
+#19 Z:\home\localhost\www\yii-1.1.15\framework\web\CWebApplication.php(141): CWebApplication->runController('card/generate')
+#20 Z:\home\localhost\www\yii-1.1.15\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#21 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/cards/index.php?r=card/generate
+HTTP_REFERER=http://localhost/cards/index.php?r=card/admin
+---
+2014/11/04 20:28:38 [error] [exception.CException] exception 'CException' with message 'Property "Card.expiratioin_date" is not defined.' in Z:\home\localhost\www\cards\protected\framework\base\CComponent.php:173
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\framework\db\ar\CActiveRecord.php(161): CComponent->__set('expiratioin_dat...', Object(CDbExpression))
+#1 Z:\home\localhost\www\cards\protected\models\Card.php(177): CActiveRecord->__set('expiratioin_dat...', Object(CDbExpression))
+#2 Z:\home\localhost\www\cards\protected\controllers\CardController.php(147): Card::generateCards('1', '1', '1')
+#3 Z:\home\localhost\www\cards\protected\framework\web\actions\CInlineAction.php(49): CardController->actionGenerate()
+#4 Z:\home\localhost\www\cards\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 Z:\home\localhost\www\cards\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 Z:\home\localhost\www\cards\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 Z:\home\localhost\www\cards\protected\framework\web\CController.php(291): CFilterChain->run()
+#11 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): CController->run('generate')
+#13 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('card/generate')
+#14 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/cards/index.php?r=card/generate
+HTTP_REFERER=http://localhost/cards/index.php?r=card/generate
+---
+2014/11/04 20:29:23 [error] [php] Object of class Card could not be converted to string (Z:\home\localhost\www\cards\protected\views\card\generate.php:37)
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\framework\web\CController.php(869): CardController->renderFile()
+#1 Z:\home\localhost\www\cards\protected\framework\web\CController.php(782): CardController->renderPartial()
+#2 Z:\home\localhost\www\cards\protected\controllers\CardController.php(158): CardController->render()
+#3 Z:\home\localhost\www\cards\protected\framework\web\actions\CInlineAction.php(49): CardController->actionGenerate()
+#4 Z:\home\localhost\www\cards\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(133): CardController->runAction()
+#6 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 Z:\home\localhost\www\cards\protected\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 Z:\home\localhost\www\cards\protected\framework\web\filters\CInlineFilter.php(58): CardController->filterAccessControl()
+#9 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 Z:\home\localhost\www\cards\protected\framework\web\CController.php(291): CFilterChain->run()
+#11 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): CardController->runActionWithFilters()
+#12 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): CardController->run()
+#13 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 Z:\home\localhost\www\cards\index.php(13): CWebApplication->run()
+REQUEST_URI=/cards/index.php?r=card/generate
+in Z:\home\localhost\www\cards\protected\views\card\generate.php (37)
+in Z:\home\localhost\www\cards\protected\controllers\CardController.php (158)
+in Z:\home\localhost\www\cards\index.php (13)
+2014/11/06 23:06:53 [error] [php] include(CJuiDateTimePicker.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (Z:\home\localhost\www\cards\protected\framework\YiiBase.php:427)
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\framework\web\CWidgetFactory.php(146): import()
+#1 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(146): CWidgetFactory->createWidget()
+#2 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(172): CardController->createWidget()
+#3 Z:\home\localhost\www\cards\protected\views\card\_form.php(57): CardController->widget()
+#4 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(126): require()
+#5 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(95): CardController->renderInternal()
+#6 Z:\home\localhost\www\cards\protected\framework\web\CController.php(869): CardController->renderFile()
+#7 Z:\home\localhost\www\cards\protected\views\card\create.php(18): CardController->renderPartial()
+#8 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(126): require()
+#9 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(95): CardController->renderInternal()
+#10 Z:\home\localhost\www\cards\protected\framework\web\CController.php(869): CardController->renderFile()
+#11 Z:\home\localhost\www\cards\protected\framework\web\CController.php(782): CardController->renderPartial()
+#12 Z:\home\localhost\www\cards\protected\controllers\CardController.php(79): CardController->render()
+#13 Z:\home\localhost\www\cards\protected\framework\web\actions\CInlineAction.php(49): CardController->actionCreate()
+#14 Z:\home\localhost\www\cards\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#15 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(133): CardController->runAction()
+#16 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 Z:\home\localhost\www\cards\protected\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#18 Z:\home\localhost\www\cards\protected\framework\web\filters\CInlineFilter.php(58): CardController->filterAccessControl()
+#19 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#20 Z:\home\localhost\www\cards\protected\framework\web\CController.php(291): CFilterChain->run()
+#21 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): CardController->runActionWithFilters()
+#22 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): CardController->run()
+#23 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#24 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#25 Z:\home\localhost\www\cards\index.php(13): CWebApplication->run()
+REQUEST_URI=/cards/index.php?r=card/create
+in Z:\home\localhost\www\cards\protected\views\card\_form.php (57)
+in Z:\home\localhost\www\cards\protected\views\card\create.php (18)
+in Z:\home\localhost\www\cards\protected\controllers\CardController.php (79)
+2014/11/06 23:07:23 [error] [exception.CException] exception 'CException' with message 'Alias "extension.CJuiDateTimePicker.CJuiDateTimePicker" is invalid. Make sure it points to an existing directory or file.' in Z:\home\localhost\www\cards\protected\framework\YiiBase.php:347
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\framework\web\CWidgetFactory.php(146): YiiBase::import('extension.CJuiD...', true)
+#1 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(CardController), 'extension.CJuiD...', Array)
+#2 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(172): CBaseController->createWidget('extension.CJuiD...', Array)
+#3 Z:\home\localhost\www\cards\protected\views\card\_form.php(57): CBaseController->widget('extension.CJuiD...', Array)
+#4 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(126): require('Z:\home\localho...')
+#5 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\localho...', Array, true)
+#6 Z:\home\localhost\www\cards\protected\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\localho...', Array, true)
+#7 Z:\home\localhost\www\cards\protected\views\card\create.php(18): CController->renderPartial('_form', Array)
+#8 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(126): require('Z:\home\localho...')
+#9 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\localho...', Array, true)
+#10 Z:\home\localhost\www\cards\protected\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\localho...', Array, true)
+#11 Z:\home\localhost\www\cards\protected\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#12 Z:\home\localhost\www\cards\protected\controllers\CardController.php(79): CController->render('create', Array)
+#13 Z:\home\localhost\www\cards\protected\framework\web\actions\CInlineAction.php(49): CardController->actionCreate()
+#14 Z:\home\localhost\www\cards\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 Z:\home\localhost\www\cards\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 Z:\home\localhost\www\cards\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 Z:\home\localhost\www\cards\protected\framework\web\CController.php(291): CFilterChain->run()
+#21 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): CController->run('create')
+#23 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('card/create')
+#24 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#25 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/cards/index.php?r=card/create
+HTTP_REFERER=http://localhost/cards/index.php?r=card/generate
+---
+2014/11/06 23:07:29 [error] [exception.CException] exception 'CException' with message 'Alias "extensions.CJuiDateTimePicker.CJuiDateTimePicker" is invalid. Make sure it points to an existing directory or file.' in Z:\home\localhost\www\cards\protected\framework\YiiBase.php:347
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\framework\web\CWidgetFactory.php(146): YiiBase::import('extensions.CJui...', true)
+#1 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(CardController), 'extensions.CJui...', Array)
+#2 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(172): CBaseController->createWidget('extensions.CJui...', Array)
+#3 Z:\home\localhost\www\cards\protected\views\card\_form.php(57): CBaseController->widget('extensions.CJui...', Array)
+#4 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(126): require('Z:\home\localho...')
+#5 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\localho...', Array, true)
+#6 Z:\home\localhost\www\cards\protected\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\localho...', Array, true)
+#7 Z:\home\localhost\www\cards\protected\views\card\create.php(18): CController->renderPartial('_form', Array)
+#8 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(126): require('Z:\home\localho...')
+#9 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\localho...', Array, true)
+#10 Z:\home\localhost\www\cards\protected\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\localho...', Array, true)
+#11 Z:\home\localhost\www\cards\protected\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#12 Z:\home\localhost\www\cards\protected\controllers\CardController.php(79): CController->render('create', Array)
+#13 Z:\home\localhost\www\cards\protected\framework\web\actions\CInlineAction.php(49): CardController->actionCreate()
+#14 Z:\home\localhost\www\cards\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 Z:\home\localhost\www\cards\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 Z:\home\localhost\www\cards\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 Z:\home\localhost\www\cards\protected\framework\web\CController.php(291): CFilterChain->run()
+#21 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): CController->run('create')
+#23 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('card/create')
+#24 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#25 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/cards/index.php?r=card/create
+HTTP_REFERER=http://localhost/cards/index.php?r=card/generate
+---
+2014/11/06 23:08:13 [error] [exception.CException] exception 'CException' with message 'Property "Card.eventDate" is not defined.' in Z:\home\localhost\www\cards\protected\framework\base\CComponent.php:130
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\framework\db\ar\CActiveRecord.php(145): CComponent->__get('eventDate')
+#1 Z:\home\localhost\www\cards\protected\framework\web\helpers\CHtml.php(2529): CActiveRecord->__get('eventDate')
+#2 Z:\home\localhost\www\cards\protected\framework\web\helpers\CHtml.php(2252): CHtml::resolveValue(Object(Card), 'eventDate')
+#3 Z:\home\localhost\www\cards\protected\framework\web\helpers\CHtml.php(1434): CHtml::activeInputField('text', Object(Card), 'eventDate', Array)
+#4 Z:\home\localhost\www\cards\protected\extensions\CJuiDateTimePicker\CJuiDateTimePicker.php(38): CHtml::activeTextField(Object(Card), 'eventDate', Array)
+#5 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(173): CJuiDateTimePicker->run()
+#6 Z:\home\localhost\www\cards\protected\views\card\_form.php(57): CBaseController->widget('ext.CJuiDateTim...', Array)
+#7 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(126): require('Z:\home\localho...')
+#8 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\localho...', Array, true)
+#9 Z:\home\localhost\www\cards\protected\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\localho...', Array, true)
+#10 Z:\home\localhost\www\cards\protected\views\card\create.php(18): CController->renderPartial('_form', Array)
+#11 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(126): require('Z:\home\localho...')
+#12 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\localho...', Array, true)
+#13 Z:\home\localhost\www\cards\protected\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\localho...', Array, true)
+#14 Z:\home\localhost\www\cards\protected\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#15 Z:\home\localhost\www\cards\protected\controllers\CardController.php(79): CController->render('create', Array)
+#16 Z:\home\localhost\www\cards\protected\framework\web\actions\CInlineAction.php(49): CardController->actionCreate()
+#17 Z:\home\localhost\www\cards\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 Z:\home\localhost\www\cards\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 Z:\home\localhost\www\cards\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 Z:\home\localhost\www\cards\protected\framework\web\CController.php(291): CFilterChain->run()
+#24 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): CController->run('create')
+#26 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('card/create')
+#27 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#28 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/cards/index.php?r=card/create
+HTTP_REFERER=http://localhost/cards/index.php?r=card/generate
+---
+2014/11/07 00:20:41 [error] [php] Cannot modify header information - headers already sent by (output started at Z:\home\localhost\www\cards\protected\controllers\CardController.php:150) (Z:\home\localhost\www\cards\protected\framework\web\CHttpRequest.php:803)
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\controllers\CardController.php(151): CardController->redirect()
+#1 Z:\home\localhost\www\cards\protected\framework\web\actions\CInlineAction.php(49): CardController->actionGenerate()
+#2 Z:\home\localhost\www\cards\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(133): CardController->runAction()
+#4 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 Z:\home\localhost\www\cards\protected\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 Z:\home\localhost\www\cards\protected\framework\web\filters\CInlineFilter.php(58): CardController->filterAccessControl()
+#7 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 Z:\home\localhost\www\cards\protected\framework\web\CController.php(291): CFilterChain->run()
+#9 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): CardController->runActionWithFilters()
+#10 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): CardController->run()
+#11 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 Z:\home\localhost\www\cards\index.php(13): CWebApplication->run()
+REQUEST_URI=/cards/index.php?r=card/generate
+in Z:\home\localhost\www\cards\protected\controllers\CardController.php (151)
+in Z:\home\localhost\www\cards\index.php (13)
+2014/11/07 15:17:36 [error] [exception.CException] exception 'CException' with message 'Property "GenerateForm.id" is not defined.' in Z:\home\localhost\www\cards\protected\framework\base\CComponent.php:130
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\views\site\generate.php(4): CComponent->__get('id')
+#1 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(126): require('Z:\home\localho...')
+#2 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\localho...', Array, true)
+#3 Z:\home\localhost\www\cards\protected\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\localho...', Array, true)
+#4 Z:\home\localhost\www\cards\protected\framework\web\CController.php(782): CController->renderPartial('generate', Array, true)
+#5 Z:\home\localhost\www\cards\protected\controllers\SiteController.php(113): CController->render('generate', Array)
+#6 Z:\home\localhost\www\cards\protected\framework\web\actions\CInlineAction.php(49): SiteController->actionGenerate()
+#7 Z:\home\localhost\www\cards\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 Z:\home\localhost\www\cards\protected\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): CController->run('generate')
+#11 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('site/generate')
+#12 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/cards/index.php?r=site/generate
+HTTP_REFERER=http://localhost/cards/index.php?r=card/admin
+---
+2014/11/07 15:17:56 [error] [exception.CException] exception 'CException' with message 'Property "GenerateForm.id" is not defined.' in Z:\home\localhost\www\cards\protected\framework\base\CComponent.php:130
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\views\site\generate.php(4): CComponent->__get('id')
+#1 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(126): require('Z:\home\localho...')
+#2 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\localho...', Array, true)
+#3 Z:\home\localhost\www\cards\protected\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\localho...', Array, true)
+#4 Z:\home\localhost\www\cards\protected\framework\web\CController.php(782): CController->renderPartial('generate', Array, true)
+#5 Z:\home\localhost\www\cards\protected\controllers\SiteController.php(113): CController->render('generate', Array)
+#6 Z:\home\localhost\www\cards\protected\framework\web\actions\CInlineAction.php(49): SiteController->actionGenerate()
+#7 Z:\home\localhost\www\cards\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 Z:\home\localhost\www\cards\protected\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): CController->run('generate')
+#11 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('site/generate')
+#12 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/cards/index.php?r=site/generate
+HTTP_REFERER=http://localhost/cards/index.php?r=card/admin
+---
+2014/11/07 15:17:58 [error] [exception.CException] exception 'CException' with message 'Property "GenerateForm.id" is not defined.' in Z:\home\localhost\www\cards\protected\framework\base\CComponent.php:130
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\views\site\generate.php(4): CComponent->__get('id')
+#1 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(126): require('Z:\home\localho...')
+#2 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\localho...', Array, true)
+#3 Z:\home\localhost\www\cards\protected\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\localho...', Array, true)
+#4 Z:\home\localhost\www\cards\protected\framework\web\CController.php(782): CController->renderPartial('generate', Array, true)
+#5 Z:\home\localhost\www\cards\protected\controllers\SiteController.php(113): CController->render('generate', Array)
+#6 Z:\home\localhost\www\cards\protected\framework\web\actions\CInlineAction.php(49): SiteController->actionGenerate()
+#7 Z:\home\localhost\www\cards\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 Z:\home\localhost\www\cards\protected\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): CController->run('generate')
+#11 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('site/generate')
+#12 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/cards/index.php?r=site/generate
+---
+2014/11/07 15:19:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "generate".' in Z:\home\localhost\www\cards\protected\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\framework\web\CController.php(270): CController->missingAction('generate')
+#1 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): CController->run('generate')
+#2 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('card/generate')
+#3 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/cards/index.php?r=card/generate
+HTTP_REFERER=http://localhost/cards/index.php?r=card/admin
+---
+2014/11/07 15:19:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "generate".' in Z:\home\localhost\www\cards\protected\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\framework\web\CController.php(270): CController->missingAction('generate')
+#1 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): CController->run('generate')
+#2 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('card/generate')
+#3 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/cards/index.php?r=card/generate
+HTTP_REFERER=http://localhost/cards/index.php?r=card/admin
+---
+2014/11/07 15:21:13 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cards_db.generateform' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `GenerateForm`.
+in Z:\home\localhost\www\cards\protected\controllers\SiteController.php (112)
+in Z:\home\localhost\www\cards\index.php (13)
+2014/11/07 15:21:13 [error] [exception.CDbException] exception 'CDbException' with message 'The table "GenerateForm" for active record class "GenerateForm" cannot be found in the database.' in Z:\home\localhost\www\cards\protected\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(GenerateForm))
+#1 Z:\home\localhost\www\cards\protected\framework\db\ar\CActiveRecord.php(79): CActiveRecord->getMetaData()
+#2 Z:\home\localhost\www\cards\protected\controllers\SiteController.php(112): CActiveRecord->__construct()
+#3 Z:\home\localhost\www\cards\protected\framework\web\actions\CInlineAction.php(49): SiteController->actionGenerate()
+#4 Z:\home\localhost\www\cards\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 Z:\home\localhost\www\cards\protected\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): CController->run('generate')
+#8 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('site/generate')
+#9 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/cards/index.php?r=site/generate
+HTTP_REFERER=http://localhost/cards/index.php?r=card/admin
+---
+2014/11/07 16:01:16 [error] [exception.CException] exception 'CException' with message 'Property "GenerateForm.attrubutes" is not defined.' in Z:\home\localhost\www\cards\protected\framework\base\CComponent.php:173
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\controllers\SiteController.php(117): CComponent->__set('attrubutes', Array)
+#1 Z:\home\localhost\www\cards\protected\framework\web\actions\CInlineAction.php(49): SiteController->actionGenerate()
+#2 Z:\home\localhost\www\cards\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 Z:\home\localhost\www\cards\protected\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): CController->run('generate')
+#6 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('site/generate')
+#7 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/cards/index.php?r=site/generate
+HTTP_REFERER=http://localhost/cards/index.php?r=site/generate
+---
+2014/11/09 16:36:35 [error] [php] mt_rand() [<a href='function.mt-rand'>function.mt-rand</a>]: max(999999) is smaller than min(1000000) (Z:\home\localhost\www\cards\protected\models\GenerateForm.php:26)
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\framework\web\actions\CInlineAction.php(49): SiteController->actionGenerate()
+#1 Z:\home\localhost\www\cards\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 Z:\home\localhost\www\cards\protected\framework\web\CController.php(286): SiteController->runAction()
+#3 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#4 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): SiteController->run()
+#5 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 Z:\home\localhost\www\cards\index.php(13): CWebApplication->run()
+REQUEST_URI=/cards/index.php?r=site/generate
+in Z:\home\localhost\www\cards\protected\models\GenerateForm.php (26)
+in Z:\home\localhost\www\cards\protected\controllers\SiteController.php (119)
+in Z:\home\localhost\www\cards\index.php (13)
+2014/11/09 16:47:12 [error] [php] Cannot modify header information - headers already sent by (output started at Z:\home\localhost\www\cards\protected\controllers\SiteController.php:119) (Z:\home\localhost\www\cards\protected\framework\web\CHttpRequest.php:803)
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\controllers\SiteController.php(120): SiteController->redirect()
+#1 Z:\home\localhost\www\cards\protected\framework\web\actions\CInlineAction.php(49): SiteController->actionGenerate()
+#2 Z:\home\localhost\www\cards\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 Z:\home\localhost\www\cards\protected\framework\web\CController.php(286): SiteController->runAction()
+#4 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#5 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): SiteController->run()
+#6 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 Z:\home\localhost\www\cards\index.php(13): CWebApplication->run()
+REQUEST_URI=/cards/index.php?r=site/generate
+in Z:\home\localhost\www\cards\protected\controllers\SiteController.php (120)
+in Z:\home\localhost\www\cards\index.php (13)
+2014/11/09 16:47:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in Z:\home\localhost\www\cards\protected\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\framework\web\CController.php(270): CController->missingAction('admin')
+#1 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): CController->run('admin')
+#2 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('site/admin')
+#3 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/cards/index.php?r=site/admin
+HTTP_REFERER=http://localhost/cards/index.php?r=site/generate
+---
+2014/11/09 16:47:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in Z:\home\localhost\www\cards\protected\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\framework\web\CController.php(270): CController->missingAction('admin')
+#1 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): CController->run('admin')
+#2 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('site/admin')
+#3 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/cards/index.php?r=site/admin
+HTTP_REFERER=http://localhost/cards/index.php?r=site/generate
+---
+2014/11/09 16:48:13 [error] [php] Cannot modify header information - headers already sent by (output started at Z:\home\localhost\www\cards\protected\controllers\SiteController.php:119) (Z:\home\localhost\www\cards\protected\framework\web\CHttpRequest.php:803)
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\controllers\SiteController.php(120): SiteController->redirect()
+#1 Z:\home\localhost\www\cards\protected\framework\web\actions\CInlineAction.php(49): SiteController->actionGenerate()
+#2 Z:\home\localhost\www\cards\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 Z:\home\localhost\www\cards\protected\framework\web\CController.php(286): SiteController->runAction()
+#4 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#5 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): SiteController->run()
+#6 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 Z:\home\localhost\www\cards\index.php(13): CWebApplication->run()
+REQUEST_URI=/cards/index.php?r=site/generate
+in Z:\home\localhost\www\cards\protected\controllers\SiteController.php (120)
+in Z:\home\localhost\www\cards\index.php (13)
+2014/11/09 17:08:02 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column '0' in 'field list'. The SQL statement executed was: INSERT INTO `tbl_card` (`0`) VALUES (:0).
+in Z:\home\localhost\www\cards\protected\models\GenerateForm.php (32)
+in Z:\home\localhost\www\cards\protected\controllers\SiteController.php (119)
+in Z:\home\localhost\www\cards\index.php (13)
+2014/11/09 17:08:02 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column '0' in 'field list'. The SQL statement executed was: INSERT INTO `tbl_card` (`0`) VALUES (:0)' in Z:\home\localhost\www\cards\protected\framework\db\CDbCommand.php:358
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\framework\db\CDbCommand.php(1250): CDbCommand->execute(Array)
+#1 Z:\home\localhost\www\cards\protected\models\GenerateForm.php(32): CDbCommand->insert('tbl_card', Array)
+#2 Z:\home\localhost\www\cards\protected\controllers\SiteController.php(119): GenerateForm->generateCards()
+#3 Z:\home\localhost\www\cards\protected\framework\web\actions\CInlineAction.php(49): SiteController->actionGenerate()
+#4 Z:\home\localhost\www\cards\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 Z:\home\localhost\www\cards\protected\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): CController->run('generate')
+#8 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('site/generate')
+#9 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/cards/index.php?r=site/generate
+HTTP_REFERER=http://localhost/cards/index.php?r=site/generate
+---
+2014/11/09 17:08:23 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column '0' in 'field list'. The SQL statement executed was: INSERT INTO `tbl_card` (`0`) VALUES (:0).
+in Z:\home\localhost\www\cards\protected\models\GenerateForm.php (32)
+in Z:\home\localhost\www\cards\protected\controllers\SiteController.php (119)
+in Z:\home\localhost\www\cards\index.php (13)
+2014/11/09 17:08:23 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column '0' in 'field list'. The SQL statement executed was: INSERT INTO `tbl_card` (`0`) VALUES (:0)' in Z:\home\localhost\www\cards\protected\framework\db\CDbCommand.php:358
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\framework\db\CDbCommand.php(1250): CDbCommand->execute(Array)
+#1 Z:\home\localhost\www\cards\protected\models\GenerateForm.php(32): CDbCommand->insert('tbl_card', Array)
+#2 Z:\home\localhost\www\cards\protected\controllers\SiteController.php(119): GenerateForm->generateCards()
+#3 Z:\home\localhost\www\cards\protected\framework\web\actions\CInlineAction.php(49): SiteController->actionGenerate()
+#4 Z:\home\localhost\www\cards\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 Z:\home\localhost\www\cards\protected\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): CController->run('generate')
+#8 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('site/generate')
+#9 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/cards/index.php?r=site/generate
+HTTP_REFERER=http://localhost/cards/index.php?r=site/generate
+---
+2014/11/09 17:30:43 [error] [exception.CException] exception 'CException' with message 'Property "CMysqlSchema.CDbCommandBuilder" is not defined.' in Z:\home\localhost\www\cards\protected\framework\base\CComponent.php:130
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\models\GenerateForm.php(31): CComponent->__get('CDbCommandBuild...')
+#1 Z:\home\localhost\www\cards\protected\controllers\SiteController.php(119): GenerateForm->generateCards()
+#2 Z:\home\localhost\www\cards\protected\framework\web\actions\CInlineAction.php(49): SiteController->actionGenerate()
+#3 Z:\home\localhost\www\cards\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 Z:\home\localhost\www\cards\protected\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): CController->run('generate')
+#7 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('site/generate')
+#8 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/cards/index.php?r=site/generate
+HTTP_REFERER=http://localhost/cards/index.php?r=site/generate
+---
+2014/11/09 23:01:47 [error] [php] date() expects at least 1 parameter, 0 given (Z:\home\localhost\www\cards\protected\controllers\SiteController.php:119)
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 Z:\home\localhost\www\cards\protected\framework\web\CController.php(286): SiteController->runAction()
+#2 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#3 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): SiteController->run()
+#4 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 Z:\home\localhost\www\cards\index.php(13): CWebApplication->run()
+REQUEST_URI=/cards/index.php?r=site/generate
+in Z:\home\localhost\www\cards\protected\controllers\SiteController.php (119)
+in Z:\home\localhost\www\cards\index.php (13)
+2014/11/09 23:11:16 [error] [exception.CException] exception 'CException' with message 'CActiveForm and its behaviors do not have a method or closure named "dropDownListt".' in Z:\home\localhost\www\cards\protected\framework\base\CComponent.php:266
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\views\order\_form.php(30): CComponent->__call('dropDownListt', Array)
+#1 Z:\home\localhost\www\cards\protected\views\order\_form.php(30): CActiveForm->dropDownListt(Object(Order), 'card_id', NULL)
+#2 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(126): require('Z:\home\localho...')
+#3 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\localho...', Array, true)
+#4 Z:\home\localhost\www\cards\protected\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\localho...', Array, true)
+#5 Z:\home\localhost\www\cards\protected\views\order\create.php(18): CController->renderPartial('_form', Array)
+#6 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(126): require('Z:\home\localho...')
+#7 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\localho...', Array, true)
+#8 Z:\home\localhost\www\cards\protected\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\localho...', Array, true)
+#9 Z:\home\localhost\www\cards\protected\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#10 Z:\home\localhost\www\cards\protected\controllers\OrderController.php(79): CController->render('create', Array)
+#11 Z:\home\localhost\www\cards\protected\framework\web\actions\CInlineAction.php(49): OrderController->actionCreate()
+#12 Z:\home\localhost\www\cards\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 Z:\home\localhost\www\cards\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 Z:\home\localhost\www\cards\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 Z:\home\localhost\www\cards\protected\framework\web\CController.php(291): CFilterChain->run()
+#19 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): CController->run('create')
+#21 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('order/create')
+#22 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/cards/index.php?r=order/create
+HTTP_REFERER=http://localhost/cards/index.php?r=order
+---
+2014/11/09 23:12:00 [error] [exception.CException] exception 'CException' with message 'Property "OrderController.series" is not defined.' in Z:\home\localhost\www\cards\protected\framework\base\CComponent.php:130
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\models\Card.php(95): CComponent->__get('series')
+#1 Z:\home\localhost\www\cards\protected\views\order\_form.php(30): Card->search()
+#2 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(126): require('Z:\home\localho...')
+#3 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\localho...', Array, true)
+#4 Z:\home\localhost\www\cards\protected\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\localho...', Array, true)
+#5 Z:\home\localhost\www\cards\protected\views\order\create.php(18): CController->renderPartial('_form', Array)
+#6 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(126): require('Z:\home\localho...')
+#7 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\localho...', Array, true)
+#8 Z:\home\localhost\www\cards\protected\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\localho...', Array, true)
+#9 Z:\home\localhost\www\cards\protected\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#10 Z:\home\localhost\www\cards\protected\controllers\OrderController.php(79): CController->render('create', Array)
+#11 Z:\home\localhost\www\cards\protected\framework\web\actions\CInlineAction.php(49): OrderController->actionCreate()
+#12 Z:\home\localhost\www\cards\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 Z:\home\localhost\www\cards\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 Z:\home\localhost\www\cards\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 Z:\home\localhost\www\cards\protected\framework\web\CController.php(291): CFilterChain->run()
+#19 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): CController->run('create')
+#21 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('order/create')
+#22 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/cards/index.php?r=order/create
+HTTP_REFERER=http://localhost/cards/index.php?r=order
+---
+2014/11/09 23:16:21 [error] [exception.CException] exception 'CException' with message 'OrderController and its behaviors do not have a method or closure named "getCommandBuilder".' in Z:\home\localhost\www\cards\protected\framework\base\CComponent.php:266
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\framework\db\ar\CActiveRecord.php(1469): CComponent->__call('getCommandBuild...', Array)
+#1 Z:\home\localhost\www\cards\protected\framework\db\ar\CActiveRecord.php(1469): OrderController->getCommandBuilder()
+#2 Z:\home\localhost\www\cards\protected\views\order\_form.php(30): CActiveRecord->findAll()
+#3 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(126): require('Z:\home\localho...')
+#4 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\localho...', Array, true)
+#5 Z:\home\localhost\www\cards\protected\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\localho...', Array, true)
+#6 Z:\home\localhost\www\cards\protected\views\order\create.php(18): CController->renderPartial('_form', Array)
+#7 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(126): require('Z:\home\localho...')
+#8 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\localho...', Array, true)
+#9 Z:\home\localhost\www\cards\protected\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\localho...', Array, true)
+#10 Z:\home\localhost\www\cards\protected\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#11 Z:\home\localhost\www\cards\protected\controllers\OrderController.php(79): CController->render('create', Array)
+#12 Z:\home\localhost\www\cards\protected\framework\web\actions\CInlineAction.php(49): OrderController->actionCreate()
+#13 Z:\home\localhost\www\cards\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#15 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 Z:\home\localhost\www\cards\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#17 Z:\home\localhost\www\cards\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#18 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#19 Z:\home\localhost\www\cards\protected\framework\web\CController.php(291): CFilterChain->run()
+#20 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): CController->run('create')
+#22 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('order/create')
+#23 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#24 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/cards/index.php?r=order/create
+HTTP_REFERER=http://localhost/cards/index.php?r=order
+---
+2014/11/09 23:16:33 [error] [exception.CException] exception 'CException' with message 'OrderController and its behaviors do not have a method or closure named "getCommandBuilder".' in Z:\home\localhost\www\cards\protected\framework\base\CComponent.php:266
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\framework\db\ar\CActiveRecord.php(1469): CComponent->__call('getCommandBuild...', Array)
+#1 Z:\home\localhost\www\cards\protected\framework\db\ar\CActiveRecord.php(1469): OrderController->getCommandBuilder()
+#2 Z:\home\localhost\www\cards\protected\views\order\_form.php(30): CActiveRecord->findAll()
+#3 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(126): require('Z:\home\localho...')
+#4 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\localho...', Array, true)
+#5 Z:\home\localhost\www\cards\protected\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\localho...', Array, true)
+#6 Z:\home\localhost\www\cards\protected\views\order\create.php(18): CController->renderPartial('_form', Array)
+#7 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(126): require('Z:\home\localho...')
+#8 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\localho...', Array, true)
+#9 Z:\home\localhost\www\cards\protected\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\localho...', Array, true)
+#10 Z:\home\localhost\www\cards\protected\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#11 Z:\home\localhost\www\cards\protected\controllers\OrderController.php(79): CController->render('create', Array)
+#12 Z:\home\localhost\www\cards\protected\framework\web\actions\CInlineAction.php(49): OrderController->actionCreate()
+#13 Z:\home\localhost\www\cards\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#15 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 Z:\home\localhost\www\cards\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#17 Z:\home\localhost\www\cards\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#18 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#19 Z:\home\localhost\www\cards\protected\framework\web\CController.php(291): CFilterChain->run()
+#20 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): CController->run('create')
+#22 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('order/create')
+#23 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#24 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/cards/index.php?r=order/create
+HTTP_REFERER=http://localhost/cards/index.php?r=order
+---
+2014/11/09 23:30:01 [error] [exception.CException] exception 'CException' with message 'CActiveForm and its behaviors do not have a method or closure named "dropDownListt".' in Z:\home\localhost\www\cards\protected\framework\base\CComponent.php:266
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\views\order\_form.php(30): CComponent->__call('dropDownListt', Array)
+#1 Z:\home\localhost\www\cards\protected\views\order\_form.php(30): CActiveForm->dropDownListt(Object(Order), 'card_id', Array)
+#2 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(126): require('Z:\home\localho...')
+#3 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\localho...', Array, true)
+#4 Z:\home\localhost\www\cards\protected\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\localho...', Array, true)
+#5 Z:\home\localhost\www\cards\protected\views\order\create.php(18): CController->renderPartial('_form', Array)
+#6 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(126): require('Z:\home\localho...')
+#7 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\localho...', Array, true)
+#8 Z:\home\localhost\www\cards\protected\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\localho...', Array, true)
+#9 Z:\home\localhost\www\cards\protected\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#10 Z:\home\localhost\www\cards\protected\controllers\OrderController.php(79): CController->render('create', Array)
+#11 Z:\home\localhost\www\cards\protected\framework\web\actions\CInlineAction.php(49): OrderController->actionCreate()
+#12 Z:\home\localhost\www\cards\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 Z:\home\localhost\www\cards\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 Z:\home\localhost\www\cards\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 Z:\home\localhost\www\cards\protected\framework\web\CController.php(291): CFilterChain->run()
+#19 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): CController->run('create')
+#21 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('order/create')
+#22 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/cards/index.php?r=order/create
+HTTP_REFERER=http://localhost/cards/index.php?r=order
+---
+2014/11/09 23:35:18 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.where" is not defined.' in Z:\home\localhost\www\cards\protected\framework\base\CComponent.php:173
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\framework\db\schema\CDbCriteria.php(160): CComponent->__set('where', 'expiration_date...')
+#1 Z:\home\localhost\www\cards\protected\framework\db\schema\CDbCommandBuilder.php(585): CDbCriteria->__construct(Array)
+#2 Z:\home\localhost\www\cards\protected\framework\db\ar\CActiveRecord.php(1469): CDbCommandBuilder->createCriteria(Array, Array)
+#3 Z:\home\localhost\www\cards\protected\views\order\_form.php(30): CActiveRecord->findAll(Array)
+#4 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(126): require('Z:\home\localho...')
+#5 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\localho...', Array, true)
+#6 Z:\home\localhost\www\cards\protected\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\localho...', Array, true)
+#7 Z:\home\localhost\www\cards\protected\views\order\create.php(18): CController->renderPartial('_form', Array)
+#8 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(126): require('Z:\home\localho...')
+#9 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\localho...', Array, true)
+#10 Z:\home\localhost\www\cards\protected\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\localho...', Array, true)
+#11 Z:\home\localhost\www\cards\protected\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#12 Z:\home\localhost\www\cards\protected\controllers\OrderController.php(79): CController->render('create', Array)
+#13 Z:\home\localhost\www\cards\protected\framework\web\actions\CInlineAction.php(49): OrderController->actionCreate()
+#14 Z:\home\localhost\www\cards\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#17 Z:\home\localhost\www\cards\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 Z:\home\localhost\www\cards\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 Z:\home\localhost\www\cards\protected\framework\web\CController.php(291): CFilterChain->run()
+#21 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): CController->run('create')
+#23 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('order/create')
+#24 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#25 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/cards/index.php?r=order/create
+HTTP_REFERER=http://localhost/cards/index.php?r=order
+---
+2014/11/10 00:22:35 [warning] [application] Failed to set unsafe attribute "id" of "Order".
+in Z:\home\localhost\www\cards\protected\controllers\OrderController.php (139)
+in Z:\home\localhost\www\cards\index.php (13)
+2014/11/10 00:22:37 [warning] [application] Failed to set unsafe attribute "id" of "Order".
+in Z:\home\localhost\www\cards\protected\controllers\OrderController.php (139)
+in Z:\home\localhost\www\cards\index.php (13)
+2014/11/10 00:22:40 [warning] [application] Failed to set unsafe attribute "id" of "Order".
+in Z:\home\localhost\www\cards\protected\controllers\OrderController.php (139)
+in Z:\home\localhost\www\cards\index.php (13)
+2014/11/10 00:23:34 [warning] [application] Failed to set unsafe attribute "id" of "Order".
+in Z:\home\localhost\www\cards\protected\controllers\OrderController.php (139)
+in Z:\home\localhost\www\cards\index.php (13)
+2014/11/10 00:29:17 [warning] [application] Failed to set unsafe attribute "id" of "Card".
+in Z:\home\localhost\www\cards\protected\controllers\CardController.php (182)
+in Z:\home\localhost\www\cards\index.php (13)
+2014/11/10 00:52:04 [error] [exception.CException] exception 'CException' with message 'Property "CNumberValidator.readOnly" is not defined.' in Z:\home\localhost\www\cards\protected\framework\base\CComponent.php:173
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\framework\validators\CValidator.php(189): CComponent->__set('readOnly', true)
+#1 Z:\home\localhost\www\cards\protected\framework\base\CModel.php(287): CValidator::createValidator('numerical', Object(Order), 'total', Array)
+#2 Z:\home\localhost\www\cards\protected\framework\base\CModel.php(260): CModel->createValidators()
+#3 Z:\home\localhost\www\cards\protected\framework\base\CModel.php(304): CModel->getValidators('order_number')
+#4 Z:\home\localhost\www\cards\protected\framework\web\helpers\CHtml.php(1414): CModel->isAttributeRequired('order_number')
+#5 Z:\home\localhost\www\cards\protected\framework\web\widgets\CActiveForm.php(597): CHtml::activeLabelEx(Object(Order), 'order_number', Array)
+#6 Z:\home\localhost\www\cards\protected\views\order\_form.php(23): CActiveForm->labelEx(Object(Order), 'order_number')
+#7 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(126): require('Z:\home\localho...')
+#8 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\localho...', Array, true)
+#9 Z:\home\localhost\www\cards\protected\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\localho...', Array, true)
+#10 Z:\home\localhost\www\cards\protected\views\order\create.php(18): CController->renderPartial('_form', Array)
+#11 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(126): require('Z:\home\localho...')
+#12 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\localho...', Array, true)
+#13 Z:\home\localhost\www\cards\protected\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\localho...', Array, true)
+#14 Z:\home\localhost\www\cards\protected\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#15 Z:\home\localhost\www\cards\protected\controllers\OrderController.php(79): CController->render('create', Array)
+#16 Z:\home\localhost\www\cards\protected\framework\web\actions\CInlineAction.php(49): OrderController->actionCreate()
+#17 Z:\home\localhost\www\cards\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#18 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#20 Z:\home\localhost\www\cards\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 Z:\home\localhost\www\cards\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 Z:\home\localhost\www\cards\protected\framework\web\CController.php(291): CFilterChain->run()
+#24 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): CController->run('create')
+#26 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('order/create')
+#27 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#28 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/cards/index.php?r=order/create
+HTTP_REFERER=http://localhost/cards/index.php?r=order/view&id=1
+---
+2014/11/10 01:25:52 [error] [exception.CException] exception 'CException' with message 'Property "OrderController.loadModel" is not defined.' in Z:\home\localhost\www\cards\protected\framework\base\CComponent.php:130
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\controllers\OrderController.php(54): CComponent->__get('loadModel')
+#1 [internal function]: OrderController->actionView('1')
+#2 Z:\home\localhost\www\cards\protected\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(OrderController), Array)
+#3 Z:\home\localhost\www\cards\protected\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(OrderController), Object(ReflectionMethod), Array)
+#4 Z:\home\localhost\www\cards\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 Z:\home\localhost\www\cards\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 Z:\home\localhost\www\cards\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 Z:\home\localhost\www\cards\protected\framework\web\CController.php(291): CFilterChain->run()
+#11 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): CController->run('view')
+#13 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('order/view')
+#14 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/cards/index.php?r=order/view&id=1
+HTTP_REFERER=http://localhost/cards/index.php?r=order
+---
+2014/11/10 01:26:04 [error] [php] Missing argument 1 for OrderController::loadModel(), called in Z:\home\localhost\www\cards\protected\controllers\OrderController.php on line 54 and defined (Z:\home\localhost\www\cards\protected\controllers\OrderController.php:156)
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#1 Z:\home\localhost\www\cards\protected\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 Z:\home\localhost\www\cards\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(133): OrderController->runAction()
+#4 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 Z:\home\localhost\www\cards\protected\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 Z:\home\localhost\www\cards\protected\framework\web\filters\CInlineFilter.php(58): OrderController->filterAccessControl()
+#7 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 Z:\home\localhost\www\cards\protected\framework\web\CController.php(291): CFilterChain->run()
+#9 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): OrderController->runActionWithFilters()
+#10 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): OrderController->run()
+#11 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 Z:\home\localhost\www\cards\index.php(13): CWebApplication->run()
+REQUEST_URI=/cards/index.php?r=order/view&id=1
+in Z:\home\localhost\www\cards\protected\controllers\OrderController.php (156)
+in Z:\home\localhost\www\cards\protected\controllers\OrderController.php (54)
+in Z:\home\localhost\www\cards\index.php (13)
+2014/11/10 01:26:37 [error] [php] Missing argument 1 for OrderController::loadModel(), called in Z:\home\localhost\www\cards\protected\controllers\OrderController.php on line 54 and defined (Z:\home\localhost\www\cards\protected\controllers\OrderController.php:156)
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(133): OrderController->runAction()
+#2 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 Z:\home\localhost\www\cards\protected\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#4 Z:\home\localhost\www\cards\protected\framework\web\filters\CInlineFilter.php(58): OrderController->filterAccessControl()
+#5 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#6 Z:\home\localhost\www\cards\protected\framework\web\CController.php(291): CFilterChain->run()
+#7 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): OrderController->runActionWithFilters()
+#8 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): OrderController->run()
+#9 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 Z:\home\localhost\www\cards\index.php(13): CWebApplication->run()
+REQUEST_URI=/cards/index.php?r=order/view&id=1
+in Z:\home\localhost\www\cards\protected\controllers\OrderController.php (156)
+in Z:\home\localhost\www\cards\protected\controllers\OrderController.php (54)
+in Z:\home\localhost\www\cards\index.php (13)
+2014/11/10 01:26:47 [error] [exception.CException] exception 'CException' with message 'OrderController and its behaviors do not have a method or closure named "newOrderLine".' in Z:\home\localhost\www\cards\protected\framework\base\CComponent.php:266
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\controllers\OrderController.php(55): CComponent->__call('newOrderLine', Array)
+#1 Z:\home\localhost\www\cards\protected\controllers\OrderController.php(55): OrderController->newOrderLine(Object(Order))
+#2 [internal function]: OrderController->actionView('1')
+#3 Z:\home\localhost\www\cards\protected\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(OrderController), Array)
+#4 Z:\home\localhost\www\cards\protected\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(OrderController), Object(ReflectionMethod), Array)
+#5 Z:\home\localhost\www\cards\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 Z:\home\localhost\www\cards\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 Z:\home\localhost\www\cards\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 Z:\home\localhost\www\cards\protected\framework\web\CController.php(291): CFilterChain->run()
+#12 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): CController->run('view')
+#14 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('order/view')
+#15 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/cards/index.php?r=order/view&id=1
+HTTP_REFERER=http://localhost/cards/index.php?r=order
+---
+2014/11/10 01:35:10 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in Z:\home\localhost\www\cards\protected\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\localhost\www\cards\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\localhost\www\cards\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\localhost\www\cards\protected\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): CController->run('addOrderLine')
+#8 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('order/addOrderL...')
+#9 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/cards/index.php?r=order/addOrderLine
+HTTP_REFERER=http://localhost/cards/index.php?r=order/view&id=1
+---
+2014/11/10 01:35:28 [error] [exception.CException] exception 'CException' with message 'OrderController cannot find the requested view "orderLine/create".' in Z:\home\localhost\www\cards\protected\framework\web\CController.php:878
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\framework\web\CController.php(782): CController->renderPartial('orderLine/creat...', Array, true)
+#1 Z:\home\localhost\www\cards\protected\controllers\OrderController.php(179): CController->render('orderLine/creat...', Array)
+#2 Z:\home\localhost\www\cards\protected\framework\web\actions\CInlineAction.php(49): OrderController->actionAddOrderLine()
+#3 Z:\home\localhost\www\cards\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 Z:\home\localhost\www\cards\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 Z:\home\localhost\www\cards\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 Z:\home\localhost\www\cards\protected\framework\web\CController.php(291): CFilterChain->run()
+#10 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): CController->run('addOrderLine')
+#12 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('order/addOrderL...')
+#13 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/cards/index.php?r=order/addOrderLine
+HTTP_REFERER=http://localhost/cards/index.php?r=order/view&id=1
+---
+2014/11/10 01:50:37 [error] [php] strpos() expects parameter 1 to be string, array given (Z:\home\localhost\www\cards\protected\framework\web\CController.php:706)
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\framework\web\CController.php(867): OrderController->getViewFile()
+#1 Z:\home\localhost\www\cards\protected\framework\web\CController.php(782): OrderController->renderPartial()
+#2 Z:\home\localhost\www\cards\protected\controllers\OrderController.php(180): OrderController->render()
+#3 Z:\home\localhost\www\cards\protected\framework\web\actions\CInlineAction.php(49): OrderController->actionAddOrderLine()
+#4 Z:\home\localhost\www\cards\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(133): OrderController->runAction()
+#6 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 Z:\home\localhost\www\cards\protected\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 Z:\home\localhost\www\cards\protected\framework\web\filters\CInlineFilter.php(58): OrderController->filterAccessControl()
+#9 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 Z:\home\localhost\www\cards\protected\framework\web\CController.php(291): CFilterChain->run()
+#11 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): OrderController->runActionWithFilters()
+#12 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): OrderController->run()
+#13 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 Z:\home\localhost\www\cards\index.php(13): CWebApplication->run()
+REQUEST_URI=/cards/index.php?r=order/addOrderLine
+in Z:\home\localhost\www\cards\protected\controllers\OrderController.php (180)
+in Z:\home\localhost\www\cards\index.php (13)
+2014/11/10 01:50:51 [error] [exception.CException] exception 'CException' with message 'OrderController cannot find the requested view "orderLine/create".' in Z:\home\localhost\www\cards\protected\framework\web\CController.php:878
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\framework\web\CController.php(782): CController->renderPartial('orderLine/creat...', Array, true)
+#1 Z:\home\localhost\www\cards\protected\controllers\OrderController.php(180): CController->render('orderLine/creat...', Array)
+#2 Z:\home\localhost\www\cards\protected\framework\web\actions\CInlineAction.php(49): OrderController->actionAddOrderLine()
+#3 Z:\home\localhost\www\cards\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 Z:\home\localhost\www\cards\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 Z:\home\localhost\www\cards\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 Z:\home\localhost\www\cards\protected\framework\web\CController.php(291): CFilterChain->run()
+#10 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): CController->run('addOrderLine')
+#12 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('order/addOrderL...')
+#13 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/cards/index.php?r=order/addOrderLine
+HTTP_REFERER=http://localhost/cards/index.php?r=order/view&id=1
+---
+2014/11/10 01:51:15 [error] [exception.CException] exception 'CException' with message 'Property "OrderLine.order_number" is not defined.' in Z:\home\localhost\www\cards\protected\framework\base\CComponent.php:130
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\framework\db\ar\CActiveRecord.php(145): CComponent->__get('order_number')
+#1 Z:\home\localhost\www\cards\protected\framework\web\helpers\CHtml.php(2529): CActiveRecord->__get('order_number')
+#2 Z:\home\localhost\www\cards\protected\framework\web\helpers\CHtml.php(2252): CHtml::resolveValue(Object(OrderLine), 'order_number')
+#3 Z:\home\localhost\www\cards\protected\framework\web\helpers\CHtml.php(1434): CHtml::activeInputField('text', Object(OrderLine), 'order_number', Array)
+#4 Z:\home\localhost\www\cards\protected\framework\web\widgets\CActiveForm.php(725): CHtml::activeTextField(Object(OrderLine), 'order_number', Array)
+#5 Z:\home\localhost\www\cards\protected\views\order\_form.php(24): CActiveForm->textField(Object(OrderLine), 'order_number', Array)
+#6 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(126): require('Z:\home\localho...')
+#7 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\localho...', Array, true)
+#8 Z:\home\localhost\www\cards\protected\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\localho...', Array, true)
+#9 Z:\home\localhost\www\cards\protected\views\orderLine\create.php(18): CController->renderPartial('_form', Array)
+#10 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(126): require('Z:\home\localho...')
+#11 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\localho...', Array, true)
+#12 Z:\home\localhost\www\cards\protected\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\localho...', Array, true)
+#13 Z:\home\localhost\www\cards\protected\framework\web\CController.php(782): CController->renderPartial('/orderLine/crea...', Array, true)
+#14 Z:\home\localhost\www\cards\protected\controllers\OrderController.php(180): CController->render('/orderLine/crea...', Array)
+#15 Z:\home\localhost\www\cards\protected\framework\web\actions\CInlineAction.php(49): OrderController->actionAddOrderLine()
+#16 Z:\home\localhost\www\cards\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 Z:\home\localhost\www\cards\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 Z:\home\localhost\www\cards\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 Z:\home\localhost\www\cards\protected\framework\web\CController.php(291): CFilterChain->run()
+#23 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): CController->run('addOrderLine')
+#25 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('order/addOrderL...')
+#26 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#27 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/cards/index.php?r=order/addOrderLine
+HTTP_REFERER=http://localhost/cards/index.php?r=order/view&id=1
+---
+2014/11/10 01:53:22 [error] [exception.CException] exception 'CException' with message 'OrderLine and its behaviors do not have a method or closure named "render".' in Z:\home\localhost\www\cards\protected\framework\base\CComponent.php:266
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\framework\db\ar\CActiveRecord.php(227): CComponent->__call('render', Array)
+#1 Z:\home\localhost\www\cards\protected\controllers\OrderController.php(180): CActiveRecord->__call('render', Array)
+#2 Z:\home\localhost\www\cards\protected\controllers\OrderController.php(180): OrderLine->render('/orderLine/crea...', Array)
+#3 Z:\home\localhost\www\cards\protected\framework\web\actions\CInlineAction.php(49): OrderController->actionAddOrderLine()
+#4 Z:\home\localhost\www\cards\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 Z:\home\localhost\www\cards\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 Z:\home\localhost\www\cards\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 Z:\home\localhost\www\cards\protected\framework\web\CController.php(291): CFilterChain->run()
+#11 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): CController->run('addOrderLine')
+#13 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('order/addOrderL...')
+#14 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/cards/index.php?r=order/addOrderLine
+HTTP_REFERER=http://localhost/cards/index.php?r=order/view&id=1
+---
+2014/11/10 01:53:49 [error] [exception.CException] exception 'CException' with message 'Property "OrderLine.order_number" is not defined.' in Z:\home\localhost\www\cards\protected\framework\base\CComponent.php:130
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\framework\db\ar\CActiveRecord.php(145): CComponent->__get('order_number')
+#1 Z:\home\localhost\www\cards\protected\framework\web\helpers\CHtml.php(2529): CActiveRecord->__get('order_number')
+#2 Z:\home\localhost\www\cards\protected\framework\web\helpers\CHtml.php(2252): CHtml::resolveValue(Object(OrderLine), 'order_number')
+#3 Z:\home\localhost\www\cards\protected\framework\web\helpers\CHtml.php(1434): CHtml::activeInputField('text', Object(OrderLine), 'order_number', Array)
+#4 Z:\home\localhost\www\cards\protected\framework\web\widgets\CActiveForm.php(725): CHtml::activeTextField(Object(OrderLine), 'order_number', Array)
+#5 Z:\home\localhost\www\cards\protected\views\order\_form.php(24): CActiveForm->textField(Object(OrderLine), 'order_number', Array)
+#6 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(126): require('Z:\home\localho...')
+#7 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\localho...', Array, true)
+#8 Z:\home\localhost\www\cards\protected\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\localho...', Array, true)
+#9 Z:\home\localhost\www\cards\protected\views\orderLine\create.php(18): CController->renderPartial('_form', Array)
+#10 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(126): require('Z:\home\localho...')
+#11 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\localho...', Array, true)
+#12 Z:\home\localhost\www\cards\protected\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\localho...', Array, true)
+#13 Z:\home\localhost\www\cards\protected\framework\web\CController.php(782): CController->renderPartial('/orderLine/crea...', Array, true)
+#14 Z:\home\localhost\www\cards\protected\controllers\OrderController.php(180): CController->render('/orderLine/crea...', Array)
+#15 Z:\home\localhost\www\cards\protected\framework\web\actions\CInlineAction.php(49): OrderController->actionAddOrderLine()
+#16 Z:\home\localhost\www\cards\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 Z:\home\localhost\www\cards\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 Z:\home\localhost\www\cards\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 Z:\home\localhost\www\cards\protected\framework\web\CController.php(291): CFilterChain->run()
+#23 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): CController->run('addOrderLine')
+#25 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('order/addOrderL...')
+#26 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#27 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/cards/index.php?r=order/addOrderLine
+HTTP_REFERER=http://localhost/cards/index.php?r=order/view&id=1
+---
+2014/11/10 02:04:53 [error] [exception.CException] exception 'CException' with message 'Property "OrderLine.order_number" is not defined.' in Z:\home\localhost\www\cards\protected\framework\base\CComponent.php:130
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\framework\db\ar\CActiveRecord.php(145): CComponent->__get('order_number')
+#1 Z:\home\localhost\www\cards\protected\framework\web\helpers\CHtml.php(2529): CActiveRecord->__get('order_number')
+#2 Z:\home\localhost\www\cards\protected\framework\web\helpers\CHtml.php(2252): CHtml::resolveValue(Object(OrderLine), 'order_number')
+#3 Z:\home\localhost\www\cards\protected\framework\web\helpers\CHtml.php(1434): CHtml::activeInputField('text', Object(OrderLine), 'order_number', Array)
+#4 Z:\home\localhost\www\cards\protected\framework\web\widgets\CActiveForm.php(725): CHtml::activeTextField(Object(OrderLine), 'order_number', Array)
+#5 Z:\home\localhost\www\cards\protected\views\order\_form.php(24): CActiveForm->textField(Object(OrderLine), 'order_number', Array)
+#6 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(126): require('Z:\home\localho...')
+#7 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\localho...', Array, true)
+#8 Z:\home\localhost\www\cards\protected\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\localho...', Array, true)
+#9 Z:\home\localhost\www\cards\protected\views\orderLine\create.php(18): CController->renderPartial('_form', Array)
+#10 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(126): require('Z:\home\localho...')
+#11 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\localho...', Array, true)
+#12 Z:\home\localhost\www\cards\protected\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\localho...', Array, true)
+#13 Z:\home\localhost\www\cards\protected\framework\web\CController.php(782): CController->renderPartial('/orderLine/crea...', Array, true)
+#14 Z:\home\localhost\www\cards\protected\controllers\OrderController.php(180): CController->render('/orderLine/crea...', Array)
+#15 Z:\home\localhost\www\cards\protected\framework\web\actions\CInlineAction.php(49): OrderController->actionAddOrderLine()
+#16 Z:\home\localhost\www\cards\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 Z:\home\localhost\www\cards\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 Z:\home\localhost\www\cards\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 Z:\home\localhost\www\cards\protected\framework\web\CController.php(291): CFilterChain->run()
+#23 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): CController->run('addOrderLine')
+#25 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('order/addOrderL...')
+#26 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#27 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/cards/index.php?r=order/addOrderLine
+HTTP_REFERER=http://localhost/cards/index.php?r=order/view&id=1
+---
+2014/11/10 02:08:27 [error] [exception.CException] exception 'CException' with message 'CWebApplication and its behaviors do not have a method or closure named "runContoller".' in Z:\home\localhost\www\cards\protected\framework\base\CComponent.php:266
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\controllers\OrderController.php(180): CComponent->__call('runContoller', Array)
+#1 Z:\home\localhost\www\cards\protected\controllers\OrderController.php(180): CWebApplication->runContoller('/orderLine/crea...', Array)
+#2 Z:\home\localhost\www\cards\protected\framework\web\actions\CInlineAction.php(49): OrderController->actionAddOrderLine()
+#3 Z:\home\localhost\www\cards\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 Z:\home\localhost\www\cards\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 Z:\home\localhost\www\cards\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 Z:\home\localhost\www\cards\protected\framework\web\CController.php(291): CFilterChain->run()
+#10 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): CController->run('addOrderLine')
+#12 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('order/addOrderL...')
+#13 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/cards/index.php?r=order/addOrderLine
+HTTP_REFERER=http://localhost/cards/index.php?r=order/view&id=1
+---
+2014/11/10 02:14:45 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in Z:\home\localhost\www\cards\protected\framework\web\CController.php:336
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 Z:\home\localhost\www\cards\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 Z:\home\localhost\www\cards\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 Z:\home\localhost\www\cards\protected\framework\web\CController.php(291): CFilterChain->run()
+#7 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): CController->run('create')
+#9 Z:\home\localhost\www\cards\protected\controllers\OrderController.php(181): CWebApplication->runController('/orderLine/crea...', Array)
+#10 Z:\home\localhost\www\cards\protected\framework\web\actions\CInlineAction.php(49): OrderController->actionAddOrderLine()
+#11 Z:\home\localhost\www\cards\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#14 Z:\home\localhost\www\cards\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 Z:\home\localhost\www\cards\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 Z:\home\localhost\www\cards\protected\framework\web\CController.php(291): CFilterChain->run()
+#18 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): CController->run('addOrderLine')
+#20 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('order/addOrderL...')
+#21 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#22 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/cards/index.php?r=order/addOrderLine
+HTTP_REFERER=http://localhost/cards/index.php?r=order/view&id=1
+---
+2014/11/10 02:18:32 [error] [php] Cannot modify header information - headers already sent by (output started at Z:\home\localhost\www\cards\protected\controllers\OrderLineController.php:69) (Z:\home\localhost\www\cards\protected\framework\web\CHttpRequest.php:803)
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\controllers\OrderLineController.php(75): OrderLineController->redirect()
+#1 unknown(0): OrderLineController->actionCreate()
+#2 Z:\home\localhost\www\cards\protected\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#3 Z:\home\localhost\www\cards\protected\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#4 Z:\home\localhost\www\cards\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(133): OrderLineController->runAction()
+#6 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 Z:\home\localhost\www\cards\protected\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 Z:\home\localhost\www\cards\protected\framework\web\filters\CInlineFilter.php(58): OrderLineController->filterAccessControl()
+#9 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 Z:\home\localhost\www\cards\protected\framework\web\CController.php(291): CFilterChain->run()
+#11 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): OrderLineController->runActionWithFilters()
+#12 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): OrderLineController->run()
+#13 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 Z:\home\localhost\www\cards\index.php(13): CWebApplication->run()
+REQUEST_URI=/cards/index.php?r=orderLine/create&order_id=1
+in Z:\home\localhost\www\cards\protected\controllers\OrderLineController.php (75)
+in Z:\home\localhost\www\cards\index.php (13)
+2014/11/10 02:32:39 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in Z:\home\localhost\www\cards\protected\framework\web\CController.php:336
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 Z:\home\localhost\www\cards\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 Z:\home\localhost\www\cards\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 Z:\home\localhost\www\cards\protected\framework\web\CController.php(291): CFilterChain->run()
+#7 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): CController->run('view')
+#9 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('card/view')
+#10 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/cards/index.php/card/1
+HTTP_REFERER=http://localhost/cards/index.php/card/index
+---
+2014/11/10 02:40:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view?.+".' in Z:\home\localhost\www\cards\protected\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\framework\web\CController.php(270): CController->missingAction('view?.+')
+#1 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): CController->run('view?.+')
+#2 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('card/view?.+')
+#3 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/cards/index.php/card/1?number=324234234
+HTTP_REFERER=http://localhost/cards/index.php/card/admin
+---
+2014/11/10 02:45:35 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in Z:\home\localhost\www\cards\protected\framework\web\CController.php:336
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 Z:\home\localhost\www\cards\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 Z:\home\localhost\www\cards\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 Z:\home\localhost\www\cards\protected\framework\web\CController.php(291): CFilterChain->run()
+#7 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): CController->run('view')
+#9 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('card/view')
+#10 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/cards/index.php/card/324234234
+HTTP_REFERER=http://localhost/cards/index.php/card/admin
+---
+2014/11/10 02:46:41 [error] [exception.CException] exception 'CException' with message 'Property "Card.url" is not defined.' in Z:\home\localhost\www\cards\protected\framework\base\CComponent.php:130
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\framework\db\ar\CActiveRecord.php(145): CComponent->__get('url')
+#1 Z:\home\localhost\www\cards\protected\framework\base\CComponent.php(612) : eval()'d code(1): CActiveRecord->__get('url')
+#2 Z:\home\localhost\www\cards\protected\framework\base\CComponent.php(612): eval()
+#3 Z:\home\localhost\www\cards\protected\framework\zii\widgets\grid\CDataColumn.php(137): CComponent->evaluateExpression('CHtml::link(CHt...', Array)
+#4 Z:\home\localhost\www\cards\protected\framework\zii\widgets\grid\CGridColumn.php(151): CDataColumn->renderDataCellContent(0, Object(Card))
+#5 Z:\home\localhost\www\cards\protected\framework\zii\widgets\grid\CGridView.php(616): CGridColumn->renderDataCell(0)
+#6 Z:\home\localhost\www\cards\protected\framework\zii\widgets\grid\CGridView.php(572): CGridView->renderTableRow(0)
+#7 Z:\home\localhost\www\cards\protected\framework\zii\widgets\grid\CGridView.php(482): CGridView->renderTableBody()
+#8 Z:\home\localhost\www\cards\protected\framework\zii\widgets\CBaseListView.php(167): CGridView->renderItems()
+#9 [internal function]: CBaseListView->renderSection(Array)
+#10 Z:\home\localhost\www\cards\protected\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#11 Z:\home\localhost\www\cards\protected\framework\zii\widgets\CBaseListView.php(135): CBaseListView->renderContent()
+#12 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(173): CBaseListView->run()
+#13 Z:\home\localhost\www\cards\protected\views\card\admin.php(72): CBaseController->widget('zii.widgets.gri...', Array)
+#14 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(126): require('Z:\home\localho...')
+#15 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\localho...', Array, true)
+#16 Z:\home\localhost\www\cards\protected\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\localho...', Array, true)
+#17 Z:\home\localhost\www\cards\protected\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#18 Z:\home\localhost\www\cards\protected\controllers\CardController.php(186): CController->render('admin', Array)
+#19 Z:\home\localhost\www\cards\protected\framework\web\actions\CInlineAction.php(49): CardController->actionAdmin()
+#20 Z:\home\localhost\www\cards\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#21 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#22 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#23 Z:\home\localhost\www\cards\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#24 Z:\home\localhost\www\cards\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#25 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#26 Z:\home\localhost\www\cards\protected\framework\web\CController.php(291): CFilterChain->run()
+#27 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#28 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): CController->run('admin')
+#29 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('card/admin')
+#30 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#31 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#32 {main}
+REQUEST_URI=/cards/index.php/card/admin
+HTTP_REFERER=http://localhost/cards/index.php/card/324234234?id=1
+---
+2014/11/10 02:47:11 [error] [exception.CException] exception 'CException' with message 'Property "Card.url" is not defined.' in Z:\home\localhost\www\cards\protected\framework\base\CComponent.php:130
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\framework\db\ar\CActiveRecord.php(145): CComponent->__get('url')
+#1 Z:\home\localhost\www\cards\protected\framework\base\CComponent.php(612) : eval()'d code(1): CActiveRecord->__get('url')
+#2 Z:\home\localhost\www\cards\protected\framework\base\CComponent.php(612): eval()
+#3 Z:\home\localhost\www\cards\protected\framework\zii\widgets\grid\CDataColumn.php(137): CComponent->evaluateExpression('CHtml::link(CHt...', Array)
+#4 Z:\home\localhost\www\cards\protected\framework\zii\widgets\grid\CGridColumn.php(151): CDataColumn->renderDataCellContent(0, Object(Card))
+#5 Z:\home\localhost\www\cards\protected\framework\zii\widgets\grid\CGridView.php(616): CGridColumn->renderDataCell(0)
+#6 Z:\home\localhost\www\cards\protected\framework\zii\widgets\grid\CGridView.php(572): CGridView->renderTableRow(0)
+#7 Z:\home\localhost\www\cards\protected\framework\zii\widgets\grid\CGridView.php(482): CGridView->renderTableBody()
+#8 Z:\home\localhost\www\cards\protected\framework\zii\widgets\CBaseListView.php(167): CGridView->renderItems()
+#9 [internal function]: CBaseListView->renderSection(Array)
+#10 Z:\home\localhost\www\cards\protected\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#11 Z:\home\localhost\www\cards\protected\framework\zii\widgets\CBaseListView.php(135): CBaseListView->renderContent()
+#12 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(173): CBaseListView->run()
+#13 Z:\home\localhost\www\cards\protected\views\card\admin.php(72): CBaseController->widget('zii.widgets.gri...', Array)
+#14 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(126): require('Z:\home\localho...')
+#15 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\localho...', Array, true)
+#16 Z:\home\localhost\www\cards\protected\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\localho...', Array, true)
+#17 Z:\home\localhost\www\cards\protected\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#18 Z:\home\localhost\www\cards\protected\controllers\CardController.php(186): CController->render('admin', Array)
+#19 Z:\home\localhost\www\cards\protected\framework\web\actions\CInlineAction.php(49): CardController->actionAdmin()
+#20 Z:\home\localhost\www\cards\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#21 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#22 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#23 Z:\home\localhost\www\cards\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#24 Z:\home\localhost\www\cards\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#25 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#26 Z:\home\localhost\www\cards\protected\framework\web\CController.php(291): CFilterChain->run()
+#27 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#28 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): CController->run('admin')
+#29 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('card/admin')
+#30 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#31 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#32 {main}
+REQUEST_URI=/cards/index.php/card/admin
+HTTP_REFERER=http://localhost/cards/index.php/card/324234234?id=1
+---
+2014/11/10 02:49:33 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in Z:\home\localhost\www\cards\protected\framework\web\CController.php:336
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 Z:\home\localhost\www\cards\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 Z:\home\localhost\www\cards\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 Z:\home\localhost\www\cards\protected\framework\web\CController.php(291): CFilterChain->run()
+#7 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): CController->run('view')
+#9 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('card/view')
+#10 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/cards/index.php/card/324234234
+HTTP_REFERER=http://localhost/cards/index.php/card/admin
+---
+2014/11/10 02:50:31 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in Z:\home\localhost\www\cards\protected\framework\web\CController.php:336
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 Z:\home\localhost\www\cards\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 Z:\home\localhost\www\cards\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 Z:\home\localhost\www\cards\protected\framework\web\CController.php(291): CFilterChain->run()
+#7 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): CController->run('view')
+#9 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('card/view')
+#10 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/cards/index.php/card/view?number=324234234
+HTTP_REFERER=http://localhost/cards/index.php/card/admin
+---
+2014/11/10 02:53:41 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in Z:\home\localhost\www\cards\protected\framework\web\CController.php:336
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 Z:\home\localhost\www\cards\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 Z:\home\localhost\www\cards\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 Z:\home\localhost\www\cards\protected\framework\web\CController.php(291): CFilterChain->run()
+#7 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): CController->run('view')
+#9 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('card/view')
+#10 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/cards/index.php/card/324234234
+HTTP_REFERER=http://localhost/cards/index.php/card/admin
+---
+2014/11/10 02:54:10 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in Z:\home\localhost\www\cards\protected\framework\web\CController.php:336
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 Z:\home\localhost\www\cards\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 Z:\home\localhost\www\cards\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 Z:\home\localhost\www\cards\protected\framework\web\CController.php(291): CFilterChain->run()
+#7 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): CController->run('view')
+#9 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('card/view')
+#10 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/cards/index.php/card/324234234
+HTTP_REFERER=http://localhost/cards/index.php/card/admin
+---
+2014/11/10 03:16:40 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in Z:\home\localhost\www\cards\protected\framework\web\CController.php:336
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 Z:\home\localhost\www\cards\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 Z:\home\localhost\www\cards\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 Z:\home\localhost\www\cards\protected\framework\web\CController.php(291): CFilterChain->run()
+#7 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): CController->run('create')
+#9 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('orderLine/creat...')
+#10 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/cards/index.php/orderLine/create
+HTTP_REFERER=http://localhost/cards/index.php/orderLine
+---
+2014/11/10 04:11:09 [error] [exception.CException] exception 'CException' with message 'Property "GenerateForm.expiration_date" is not defined.' in Z:\home\localhost\www\cards\protected\framework\base\CComponent.php:130
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\controllers\SiteController.php(118): CComponent->__get('expiration_date')
+#1 Z:\home\localhost\www\cards\protected\framework\web\actions\CInlineAction.php(49): SiteController->actionGenerate()
+#2 Z:\home\localhost\www\cards\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 Z:\home\localhost\www\cards\protected\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): CController->run('generate')
+#6 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('site/generate')
+#7 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/cards/index.php/site/generate
+HTTP_REFERER=http://localhost/cards/index.php/site/generate
+---
+2014/11/10 04:13:07 [error] [php] Object of class DateTime could not be converted to string (Z:\home\localhost\www\cards\protected\framework\db\schema\CDbColumnSchema.php:146)
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\models\GenerateForm.php(34): CMysqlCommandBuilder->createMultipleInsertCommand()
+#1 Z:\home\localhost\www\cards\protected\controllers\SiteController.php(120): GenerateForm->generateCards()
+#2 Z:\home\localhost\www\cards\protected\framework\web\actions\CInlineAction.php(49): SiteController->actionGenerate()
+#3 Z:\home\localhost\www\cards\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 Z:\home\localhost\www\cards\protected\framework\web\CController.php(286): SiteController->runAction()
+#5 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#6 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): SiteController->run()
+#7 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 Z:\home\localhost\www\cards\index.php(13): CWebApplication->run()
+REQUEST_URI=/cards/index.php/site/generate
+in Z:\home\localhost\www\cards\protected\models\GenerateForm.php (34)
+in Z:\home\localhost\www\cards\protected\controllers\SiteController.php (120)
+in Z:\home\localhost\www\cards\index.php (13)
+2014/11/10 04:15:14 [error] [php] Object of class DateTime could not be converted to string (Z:\home\localhost\www\cards\protected\framework\db\schema\CDbColumnSchema.php:146)
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\models\GenerateForm.php(34): CMysqlCommandBuilder->createMultipleInsertCommand()
+#1 Z:\home\localhost\www\cards\protected\controllers\SiteController.php(120): GenerateForm->generateCards()
+#2 Z:\home\localhost\www\cards\protected\framework\web\actions\CInlineAction.php(49): SiteController->actionGenerate()
+#3 Z:\home\localhost\www\cards\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 Z:\home\localhost\www\cards\protected\framework\web\CController.php(286): SiteController->runAction()
+#5 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#6 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): SiteController->run()
+#7 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 Z:\home\localhost\www\cards\index.php(13): CWebApplication->run()
+REQUEST_URI=/cards/index.php/site/generate
+in Z:\home\localhost\www\cards\protected\models\GenerateForm.php (34)
+in Z:\home\localhost\www\cards\protected\controllers\SiteController.php (120)
+in Z:\home\localhost\www\cards\index.php (13)
+2014/11/10 04:21:02 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'expiration_date' cannot be null. The SQL statement executed was: INSERT INTO `tbl_card` (`number`, `series`, `expiration_date`, `create_date`, `status`) VALUES (:number_0, :series_0, :expiration_date_0, NOW(), :status_0). Bound with :number_0='227472', :series_0='333', :expiration_date_0=NULL, :status_0=1.
+in Z:\home\localhost\www\cards\protected\models\GenerateForm.php (34)
+in Z:\home\localhost\www\cards\protected\controllers\SiteController.php (120)
+in Z:\home\localhost\www\cards\index.php (13)
+2014/11/10 04:21:02 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'expiration_date' cannot be null. The SQL statement executed was: INSERT INTO `tbl_card` (`number`, `series`, `expiration_date`, `create_date`, `status`) VALUES (:number_0, :series_0, :expiration_date_0, NOW(), :status_0). Bound with :number_0='227472', :series_0='333', :expiration_date_0=NULL, :status_0=1' in Z:\home\localhost\www\cards\protected\framework\db\CDbCommand.php:358
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\models\GenerateForm.php(34): CDbCommand->execute()
+#1 Z:\home\localhost\www\cards\protected\controllers\SiteController.php(120): GenerateForm->generateCards()
+#2 Z:\home\localhost\www\cards\protected\framework\web\actions\CInlineAction.php(49): SiteController->actionGenerate()
+#3 Z:\home\localhost\www\cards\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 Z:\home\localhost\www\cards\protected\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): CController->run('generate')
+#7 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('site/generate')
+#8 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/cards/index.php/site/generate
+HTTP_REFERER=http://localhost/cards/index.php/site/generate
+---
+2014/11/10 13:49:11 [error] [exception.CException] exception 'CException' with message 'Property "Order.number" is not defined.' in Z:\home\localhost\www\cards\protected\framework\base\CComponent.php:130
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\framework\db\ar\CActiveRecord.php(145): CComponent->__get('number')
+#1 Z:\home\localhost\www\cards\protected\framework\base\CComponent.php(612) : eval()'d code(1): CActiveRecord->__get('number')
+#2 Z:\home\localhost\www\cards\protected\framework\base\CComponent.php(612): eval()
+#3 Z:\home\localhost\www\cards\protected\framework\zii\widgets\grid\CDataColumn.php(137): CComponent->evaluateExpression('CHtml::link(CHt...', Array)
+#4 Z:\home\localhost\www\cards\protected\framework\zii\widgets\grid\CGridColumn.php(151): CDataColumn->renderDataCellContent(0, Object(Order))
+#5 Z:\home\localhost\www\cards\protected\framework\zii\widgets\grid\CGridView.php(616): CGridColumn->renderDataCell(0)
+#6 Z:\home\localhost\www\cards\protected\framework\zii\widgets\grid\CGridView.php(572): CGridView->renderTableRow(0)
+#7 Z:\home\localhost\www\cards\protected\framework\zii\widgets\grid\CGridView.php(482): CGridView->renderTableBody()
+#8 Z:\home\localhost\www\cards\protected\framework\zii\widgets\CBaseListView.php(167): CGridView->renderItems()
+#9 [internal function]: CBaseListView->renderSection(Array)
+#10 Z:\home\localhost\www\cards\protected\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#11 Z:\home\localhost\www\cards\protected\framework\zii\widgets\CBaseListView.php(135): CBaseListView->renderContent()
+#12 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(173): CBaseListView->run()
+#13 Z:\home\localhost\www\cards\protected\views\order\admin.php(66): CBaseController->widget('zii.widgets.gri...', Array)
+#14 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(126): require('Z:\home\localho...')
+#15 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\localho...', Array, true)
+#16 Z:\home\localhost\www\cards\protected\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\localho...', Array, true)
+#17 Z:\home\localhost\www\cards\protected\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#18 Z:\home\localhost\www\cards\protected\controllers\OrderController.php(146): CController->render('admin', Array)
+#19 Z:\home\localhost\www\cards\protected\framework\web\actions\CInlineAction.php(49): OrderController->actionAdmin()
+#20 Z:\home\localhost\www\cards\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#21 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#22 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#23 Z:\home\localhost\www\cards\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#24 Z:\home\localhost\www\cards\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#25 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#26 Z:\home\localhost\www\cards\protected\framework\web\CController.php(291): CFilterChain->run()
+#27 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#28 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): CController->run('admin')
+#29 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('order/admin')
+#30 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#31 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#32 {main}
+REQUEST_URI=/cards/index.php/order/admin
+HTTP_REFERER=http://localhost/cards/
+---
+2014/11/10 13:49:26 [error] [exception.CException] exception 'CException' with message 'Property "Order.url" is not defined.' in Z:\home\localhost\www\cards\protected\framework\base\CComponent.php:130
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\framework\db\ar\CActiveRecord.php(145): CComponent->__get('url')
+#1 Z:\home\localhost\www\cards\protected\framework\base\CComponent.php(612) : eval()'d code(1): CActiveRecord->__get('url')
+#2 Z:\home\localhost\www\cards\protected\framework\base\CComponent.php(612): eval()
+#3 Z:\home\localhost\www\cards\protected\framework\zii\widgets\grid\CDataColumn.php(137): CComponent->evaluateExpression('CHtml::link(CHt...', Array)
+#4 Z:\home\localhost\www\cards\protected\framework\zii\widgets\grid\CGridColumn.php(151): CDataColumn->renderDataCellContent(0, Object(Order))
+#5 Z:\home\localhost\www\cards\protected\framework\zii\widgets\grid\CGridView.php(616): CGridColumn->renderDataCell(0)
+#6 Z:\home\localhost\www\cards\protected\framework\zii\widgets\grid\CGridView.php(572): CGridView->renderTableRow(0)
+#7 Z:\home\localhost\www\cards\protected\framework\zii\widgets\grid\CGridView.php(482): CGridView->renderTableBody()
+#8 Z:\home\localhost\www\cards\protected\framework\zii\widgets\CBaseListView.php(167): CGridView->renderItems()
+#9 [internal function]: CBaseListView->renderSection(Array)
+#10 Z:\home\localhost\www\cards\protected\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#11 Z:\home\localhost\www\cards\protected\framework\zii\widgets\CBaseListView.php(135): CBaseListView->renderContent()
+#12 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(173): CBaseListView->run()
+#13 Z:\home\localhost\www\cards\protected\views\order\admin.php(66): CBaseController->widget('zii.widgets.gri...', Array)
+#14 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(126): require('Z:\home\localho...')
+#15 Z:\home\localhost\www\cards\protected\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\localho...', Array, true)
+#16 Z:\home\localhost\www\cards\protected\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\localho...', Array, true)
+#17 Z:\home\localhost\www\cards\protected\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#18 Z:\home\localhost\www\cards\protected\controllers\OrderController.php(146): CController->render('admin', Array)
+#19 Z:\home\localhost\www\cards\protected\framework\web\actions\CInlineAction.php(49): OrderController->actionAdmin()
+#20 Z:\home\localhost\www\cards\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#21 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#22 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#23 Z:\home\localhost\www\cards\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#24 Z:\home\localhost\www\cards\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#25 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#26 Z:\home\localhost\www\cards\protected\framework\web\CController.php(291): CFilterChain->run()
+#27 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#28 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): CController->run('admin')
+#29 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('order/admin')
+#30 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#31 Z:\home\localhost\www\cards\index.php(13): CApplication->run()
+#32 {main}
+REQUEST_URI=/cards/index.php/order/admin
+HTTP_REFERER=http://localhost/cards/
+---
+2014/11/10 13:59:32 [error] [php] Cannot modify header information - headers already sent by (output started at Z:\home\localhost\www\cards\protected\controllers\OrderController.php:77) (Z:\home\localhost\www\cards\protected\framework\web\CHttpRequest.php:803)
+Stack trace:
+#0 Z:\home\localhost\www\cards\protected\controllers\OrderController.php(78): OrderController->redirect()
+#1 unknown(0): OrderController->actionCreate()
+#2 Z:\home\localhost\www\cards\protected\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#3 Z:\home\localhost\www\cards\protected\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#4 Z:\home\localhost\www\cards\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(133): OrderController->runAction()
+#6 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 Z:\home\localhost\www\cards\protected\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 Z:\home\localhost\www\cards\protected\framework\web\filters\CInlineFilter.php(58): OrderController->filterAccessControl()
+#9 Z:\home\localhost\www\cards\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 Z:\home\localhost\www\cards\protected\framework\web\CController.php(291): CFilterChain->run()
+#11 Z:\home\localhost\www\cards\protected\framework\web\CController.php(265): OrderController->runActionWithFilters()
+#12 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(282): OrderController->run()
+#13 Z:\home\localhost\www\cards\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 Z:\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 Z:\home\localhost\www\cards\index.php(13): CWebApplication->run()
+REQUEST_URI=/cards/index.php/order/create
+in Z:\home\localhost\www\cards\protected\controllers\OrderController.php (78)
+in Z:\home\localhost\www\cards\index.php (13)

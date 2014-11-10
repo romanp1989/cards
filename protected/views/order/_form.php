@@ -27,15 +27,15 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'card_id'); ?>
-		<?php echo $form->textField($model,'card_id'); ?>
+		<?php echo $form->dropDownList($model,'card_id',CHtml::listData(Card::model()->findAll(array('condition'=>'expiration_date > NOW()')), 'id', 'fullNumber')); ?>
 		<?php echo $form->error($model,'card_id'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'total'); ?>
-		<?php echo $form->textField($model,'total'); ?>
-		<?php echo $form->error($model,'total'); ?>
-	</div>
+	<!-- <div class="row"> -->
+		<?php// echo $form->labelEx($model,'total'); ?>
+		<?php// echo $form->textField($model,'total'); ?>
+		<?php// echo $form->error($model,'total'); ?>
+	<!-- </div> -->
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>

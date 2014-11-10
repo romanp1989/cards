@@ -36,7 +36,7 @@ class OrderController extends Controller
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
+				'actions'=>array('admin','delete','addOrderLine'),
 				'users'=>array('admin'),
 			),
 			array('deny',  // deny all users
@@ -51,8 +51,11 @@ class OrderController extends Controller
 	 */
 	public function actionView($id)
 	{
+		// $order=$this->loadModel($id);
+		// $orderLine=$this->newOrderLine($order);
 		$this->render('view',array(
 			'model'=>$this->loadModel($id),
+			// 'orderLine'=>$orderLine,
 		));
 	}
 
@@ -60,10 +63,10 @@ class OrderController extends Controller
 	 * Creates a new model.
 	 * If creation is successful, the browser will be redirected to the 'view' page.
 	 */
-	public function actionCreate()
+	public function actionCreate($card_id=None)
 	{
 		$model=new Order;
-
+		$model->card_id=$card_id;
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
@@ -71,7 +74,8 @@ class OrderController extends Controller
 		{
 			$model->attributes=$_POST['Order'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+				var_dump($model->card->used_date);
+				// $this->redirect(array('view','id'=>$model->id));
 		}
 
 		$this->render('create',array(
@@ -170,4 +174,11 @@ class OrderController extends Controller
 			Yii::app()->end();
 		}
 	}
+
+	// public function actionAddOrderLine()
+	// {
+	// 	$orderLine = new OrderLine;
+	// 	$orderLine->order_id = $this->id;
+	// 	Yii::app()->runController('/orderLine/create', array('model'=>$orderLine));
+	// }
 }
