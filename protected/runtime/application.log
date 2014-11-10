@@ -2146,3 +2146,51 @@ Stack trace:
 REQUEST_URI=/cards/index.php/order/create
 in Z:\home\localhost\www\cards\protected\controllers\OrderController.php (78)
 in Z:\home\localhost\www\cards\index.php (13)
+2014/11/10 14:46:09 [error] [exception.CException] exception 'CException' with message 'CheckCardCommand and its behaviors do not have a method or closure named "getCommandBuilder".' in C:\WebServers\home\localhost\www\cards\protected\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\WebServers\home\localhost\www\cards\protected\framework\db\ar\CActiveRecord.php(1763): CComponent->__call('getCommandBuild...', Array)
+#1 C:\WebServers\home\localhost\www\cards\protected\framework\db\ar\CActiveRecord.php(1763): CheckCardCommand->getCommandBuilder()
+#2 C:\WebServers\home\localhost\www\cards\protected\commands\CheckCardCommand.php(4): CActiveRecord->updateAll('status=2', 'expiration_date...')
+#3 C:\WebServers\home\localhost\www\cards\protected\framework\console\CConsoleCommandRunner.php(71): CheckCardCommand->run(Array)
+#4 C:\WebServers\home\localhost\www\cards\protected\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#5 C:\WebServers\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CConsoleApplication->processRequest()
+#6 C:\WebServers\home\localhost\www\cards\protected\framework\yiic.php(33): CApplication->run()
+#7 C:\WebServers\home\localhost\www\cards\protected\cron_deactivate_card.php(5): require_once('C:\WebServers\h...')
+#8 {main}
+---
+2014/11/10 14:50:21 [error] [exception.CException] exception 'CException' with message 'CheckCardCommand and its behaviors do not have a method or closure named "getCommandBuilder".' in C:\WebServers\home\localhost\www\cards\protected\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\WebServers\home\localhost\www\cards\protected\framework\db\ar\CActiveRecord.php(1469): CComponent->__call('getCommandBuild...', Array)
+#1 C:\WebServers\home\localhost\www\cards\protected\framework\db\ar\CActiveRecord.php(1469): CheckCardCommand->getCommandBuilder()
+#2 C:\WebServers\home\localhost\www\cards\protected\commands\CheckCardCommand.php(4): CActiveRecord->findAll('status=2', 'expiration_date...')
+#3 C:\WebServers\home\localhost\www\cards\protected\framework\console\CConsoleCommandRunner.php(71): CheckCardCommand->run(Array)
+#4 C:\WebServers\home\localhost\www\cards\protected\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#5 C:\WebServers\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CConsoleApplication->processRequest()
+#6 C:\WebServers\home\localhost\www\cards\protected\framework\yiic.php(33): CApplication->run()
+#7 C:\WebServers\home\localhost\www\cards\protected\cron_deactivate_card.php(5): require_once('C:\WebServers\h...')
+#8 {main}
+---
+2014/11/10 14:51:45 [error] [exception.CException] exception 'CException' with message 'CheckCardCommand and its behaviors do not have a method or closure named "getCommandBuilder".' in C:\WebServers\home\localhost\www\cards\protected\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\WebServers\home\localhost\www\cards\protected\framework\db\ar\CActiveRecord.php(1469): CComponent->__call('getCommandBuild...', Array)
+#1 C:\WebServers\home\localhost\www\cards\protected\framework\db\ar\CActiveRecord.php(1469): CheckCardCommand->getCommandBuilder()
+#2 C:\WebServers\home\localhost\www\cards\protected\commands\CheckCardCommand.php(4): CActiveRecord->findAll('status=2', 'expiration_date...')
+#3 C:\WebServers\home\localhost\www\cards\protected\framework\console\CConsoleCommandRunner.php(71): CheckCardCommand->run(Array)
+#4 C:\WebServers\home\localhost\www\cards\protected\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#5 C:\WebServers\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CConsoleApplication->processRequest()
+#6 C:\WebServers\home\localhost\www\cards\protected\framework\yiic.php(33): CApplication->run()
+#7 C:\WebServers\home\localhost\www\cards\protected\cron_deactivate_card.php(5): require_once('C:\WebServers\h...')
+#8 {main}
+---
+2014/11/10 15:02:10 [error] [exception.CException] exception 'CException' with message 'CheckCardCommand and its behaviors do not have a method or closure named "getCommandBuilder".' in C:\WebServers\home\localhost\www\cards\protected\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\WebServers\home\localhost\www\cards\protected\framework\db\ar\CActiveRecord.php(1469): CComponent->__call('getCommandBuild...', Array)
+#1 C:\WebServers\home\localhost\www\cards\protected\framework\db\ar\CActiveRecord.php(1469): CheckCardCommand->getCommandBuilder()
+#2 C:\WebServers\home\localhost\www\cards\protected\commands\CheckCardCommand.php(4): CActiveRecord->findAll('status=2', 'expiration_date...')
+#3 C:\WebServers\home\localhost\www\cards\protected\framework\console\CConsoleCommandRunner.php(71): CheckCardCommand->run(Array)
+#4 C:\WebServers\home\localhost\www\cards\protected\framework\console\CConsoleApplication.php(92): CConsoleCommandRunner->run(Array)
+#5 C:\WebServers\home\localhost\www\cards\protected\framework\base\CApplication.php(180): CConsoleApplication->processRequest()
+#6 C:\WebServers\home\localhost\www\cards\protected\framework\yiic.php(33): CApplication->run()
+#7 C:\WebServers\home\localhost\www\cards\protected\cron_deactivate_card.php(5): require_once('C:\WebServers\h...')
+#8 {main}
+---
